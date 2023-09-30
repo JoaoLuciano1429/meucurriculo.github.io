@@ -1,0 +1,35 @@
+@font-face {
+  font-family: Futura-Std-Heavy;
+  src: url("fonts/Futura Std Heavy.ttf");
+}
+
+@font-face {
+  font-family: Futura-Std-Book;
+  src: url("fonts/Futura Std Book.ttf");
+}
+
+@font-face {
+  font-family: Futura-Std-Book-Oblique;
+  src: url("fonts/Futura Std Book Oblique.ttf");
+}
+
+@font-face {
+  font-family: Futura-Std-Bold-Oblique;
+  src: url("fonts/Futura Std Bold Oblique.ttf");
+}
+
+[normal] {
+  font-family: Futura-Std-Book;
+}
+
+[negrito] {
+  font-family: Futura-Std-Heavy;
+}
+
+[obliquo] {
+  font-family: Futura-Std-Book-Oblique;
+}
+
+[bolditalic] {
+  font-family: Futura-Std-Bold-Oblique;
+}
