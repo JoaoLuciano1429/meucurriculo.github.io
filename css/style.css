@@ -1,0 +1,559 @@
+@media print {
+  button#toTop {
+    visibility: hidden;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #c4b18e;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 15px;
+}
+
+html,
+body {
+  background-color: #f5deb3;
+  width: 90vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+#border {
+  transform: translateY(900px);
+  border: 4px #333 double;
+  width: 80vw;
+  height: auto;
+  display: grid;
+  place-items: center;
+  gap: 25px;
+  position: absolute;
+}
+
+section#dadosPessoais {
+  display: grid;
+  grid-template-areas:
+    "title title title title"
+    "breakLine breakLine breakLine breakLine"
+    "breakLine breakLine breakLine breakLine"
+    "breakLine breakLine breakLine breakLine"
+    "photo photo name name"
+    "photo photo genre genre"
+    "photo photo birthday birthday"
+    "photo photo age age"
+    "photo photo phone phone"
+    "photo photo email email";
+  gap: 0 20px;
+}
+
+#dadosPessoais > figure.photo > img {
+  width: 200px;
+  height: 200px;
+  border: 3px #fff solid;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 1em rgba(0, 0, 0, 0.5));
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  color: #333;
+}
+
+h1 {
+  font-size: 46px;
+}
+
+.title {
+  grid-area: title;
+}
+
+.breakLine {
+  height: 60px;
+  width: auto;
+  grid-area: breakLine;
+}
+
+.photo {
+  grid-area: photo;
+}
+
+.name {
+  grid-area: name;
+}
+
+.genre {
+  grid-area: genre;
+}
+
+.age {
+  grid-area: age;
+}
+
+.birthday {
+  grid-area: birthday;
+}
+
+.phone {
+  grid-area: phone;
+}
+
+a {
+  color: #050;
+}
+
+a:active {
+  color: #002800;
+}
+
+a:visited {
+  color: #f00;
+}
+
+.email {
+  grid-area: email;
+}
+
+hr {
+  border: 1px #444 solid;
+  width: 70vw;
+}
+
+p {
+  font-size: 23px;
+}
+
+section#objetivosProfissionais {
+  display: grid;
+  grid-template-areas:
+    "title2 title2 title2 title2"
+    "breakLine2 breakLine2 breakLine2 breakLine2"
+    "breakLine2 breakLine2 breakLine2 breakLine2"
+    "breakLine2 breakLine2 breakLine2 breakLine2"
+    "text-content text-content text-content text-content"
+    "text-content text-content text-content text-content"
+    "text-content text-content text-content text-content"
+    "text-content text-content text-content text-content";
+  gap: 0 20px;
+}
+
+.title2 {
+  grid-area: title2;
+  max-width: 65vw;
+}
+
+.breakLine2 {
+  grid-area: breakLine2;
+  max-width: 65vw;
+}
+
+.text-content {
+  grid-area: text-content;
+  max-width: 65vw;
+}
+
+#formacaoAcademica {
+  display: grid;
+  grid-template-areas:
+    "title3 title3 title3 title3"
+    "breakLine3 breakLine3 breakLine3 breakLine3"
+    "breakLine3 breakLine3 breakLine3 breakLine3"
+    "breakLine3 breakLine3 breakLine3 breakLine3"
+    "cardFarroupilha cardFarroupilha cardLiceu cardLiceu"
+    "cardUNISAL cardUNISAL cardUNISAL cardUNISAL"
+    "links_-1 links_-1 links_-1 links_-1"
+    "links0 links0 links0 links0";
+  gap: 0 80px;
+}
+
+.title3 {
+  grid-area: title3;
+}
+
+.breakLine3 {
+  grid-area: breakLine3;
+}
+
+#cardLiceu {
+  position: relative;
+  grid-area: cardLiceu;
+  width: 250px;
+  height: 210px;
+  border: 2px #ddd solid;
+  border-radius: 20px;
+}
+
+#cardLiceu > img {
+  position: absolute;
+  width: 250px;
+  height: auto;
+}
+
+#cardLiceu h4 {
+  background-color: #ffffffc7;
+  position: absolute;
+  transform: translateY(90px);
+}
+
+#cardFarroupilha {
+  position: relative;
+  grid-area: cardFarroupilha;
+  width: 250px;
+  height: 210px;
+  border: 2px #ddd solid;
+  border-radius: 20px;
+}
+
+#cardFarroupilha > img {
+  position: absolute;
+  width: 250px;
+  height: auto;
+}
+
+#cardFarroupilha h4 {
+  background-color: #ffffffc7;
+  position: absolute;
+  transform: translateY(110px);
+}
+
+#cardUNISAL {
+  grid-area: cardUNISAL;
+  width: 250px;
+  height: 176.95px;
+  border: 2px #ddd solid;
+  border-radius: 20px;
+  background-color: #181818;
+  position: relative;
+}
+
+#cardUNISAL .loader {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border-top: 8px solid rgba(255, 255, 255, 1);
+  border-left: 8px solid rgba(255, 255, 255, 1);
+  border-right: 8px solid rgba(255, 255, 255, 0);
+  animation: spin 0.575s infinite linear;
+  left: 36%;
+}
+
+#cardUNISAL h4 {
+  position: absolute;
+  transform: translateY(85px);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#experienciaProfissional {
+  display: grid;
+  grid-template-areas:
+    "title4 title4 title4 title4"
+    "breakLine4 breakLine4 breakLine4 breakLine4"
+    "breakLine4 breakLine4 breakLine4 breakLine4"
+    "breakLine4 breakLine4 breakLine4 breakLine4"
+    "cardIBGE cardIBGE cardIBGE cardIBGE";
+  gap: 0 20px;
+}
+
+.title4 {
+  grid-area: title4;
+}
+
+.breakLine4 {
+  grid-area: breakLine4;
+}
+
+#cardIBGE {
+  position: relative;
+  grid-area: cardIBGE;
+  width: 250px;
+  height: 210px;
+  border: 2px #ddd solid;
+  border-radius: 20px;
+}
+
+#cardIBGE > img {
+  position: absolute;
+  width: 250px;
+  height: auto;
+}
+
+#cardIBGE h4 {
+  background-color: #cecece75;
+  position: absolute;
+  transform: translateY(150px);
+}
+
+#cursosExtracurriculares {
+  display: grid;
+  grid-template-areas:
+    "title5 title5 title5 title5"
+    "breakLine5 breakLine5 breakLine5 breakLine5"
+    "breakLine5 breakLine5 breakLine5 breakLine5"
+    "breakLine5 breakLine5 breakLine5 breakLine5"
+    "img-icon subTitle subTitle subTitle"
+    "texto1 texto1 texto1 texto1"
+    "HTML5card HTML5card CSS3card CSSmodernoCard"
+    "JScard JScard JScard JScard"
+    "texto2 texto2 texto2 texto2"
+    "HTML5LegacyCard HTML5LegacyCard JS1card JS2card"
+    "links links links links";
+  gap: 0 20px;
+}
+
+.title5 {
+  grid-area: title5;
+}
+
+.breakLine5 {
+  grid-area: breakLine5;
+}
+
+.img-icon {
+  grid-area: img-icon;
+  width: 46px;
+  height: auto;
+}
+
+.subTitle {
+  font-size: 23px;
+  grid-area: subTitle;
+}
+
+.t1 {
+  grid-area: texto1;
+}
+
+.t2 {
+  grid-area: texto2;
+}
+
+#HTML5card {
+  position: relative;
+  grid-area: HTML5card;
+  width: 250px;
+  height: 210px;
+  border: 2px #ddd solid;
+  border-radius: 20px;
+}
+
+#HTML5card > img {
+  position: absolute;
+  width: 250px;
+  height: auto;
+}
+
+#HTML5card h4 {
+  background-color: #ffffffad;
+  position: absolute;
+  transform: translateY(115px);
+}
+
+#CSS3card {
+  position: relative;
+  grid-area: CSS3card;
+  width: 250px;
+  height: 210px;
+  border: 2px #ddd solid;
+  border-radius: 20px;
+}
+
+#CSS3card > img {
+  position: absolute;
+  width: 250px;
+  height: auto;
+}
+
+#CSS3card h4 {
+  background-color: #ffffffad;
+  position: absolute;
+  transform: translateY(115px);
+}
+
+#CSSmodernoCard {
+  position: relative;
+  grid-area: CSSmodernoCard;
+  width: 250px;
+  height: 210px;
+  border: 2px #ddd solid;
+  border-radius: 20px;
+}
+
+#CSSmodernoCard > img {
+  position: absolute;
+  width: 250px;
+  height: auto;
+}
+
+#CSSmodernoCard h4 {
+  background-color: #ffffffad;
+  position: absolute;
+  transform: translateY(115px);
+}
+
+#JScard {
+  position: relative;
+  grid-area: JScard;
+  width: 250px;
+  height: 210px;
+  border: 2px #ddd solid;
+  border-radius: 20px;
+}
+
+#JScard > img {
+  position: absolute;
+  width: 250px;
+  height: auto;
+}
+
+#JScard h4 {
+  background-color: #ffffffad;
+  position: absolute;
+  transform: translateY(115px);
+}
+
+#HTML5LegacyCard {
+  position: relative;
+  grid-area: HTML5LegacyCard;
+  width: 250px;
+  height: 210px;
+  border: 2px #ddd solid;
+  border-radius: 20px;
+}
+
+#HTML5LegacyCard > img {
+  position: absolute;
+  width: 250px;
+  height: auto;
+  filter: grayscale();
+}
+
+#HTML5LegacyCard h4 {
+  background-color: #ffffffad;
+  position: absolute;
+  transform: translateY(115px);
+}
+
+#JS1card {
+  position: relative;
+  grid-area: JS1card;
+  width: 250px;
+  height: 210px;
+  border: 2px #ddd solid;
+  border-radius: 20px;
+}
+
+#JS1card > img {
+  position: absolute;
+  width: 250px;
+  height: auto;
+  filter: grayscale();
+}
+
+#JS1card h4 {
+  background-color: #ffffffad;
+  position: absolute;
+  transform: translateY(115px);
+}
+
+#JS2card {
+  position: relative;
+  grid-area: JS2card;
+  width: 250px;
+  height: 210px;
+  border: 2px #ddd solid;
+  border-radius: 20px;
+}
+
+#JS2card > img {
+  position: absolute;
+  width: 250px;
+  height: auto;
+  filter: grayscale();
+}
+
+#JS2card h4 {
+  background-color: #ffffffad;
+  position: absolute;
+  transform: translateY(115px);
+  padding-right: 12px;
+}
+
+.links_-1 {
+  grid-area: links_-1;
+}
+
+.links0 {
+  grid-area: links0;
+}
+
+#linksDiv {
+  grid-area: links;
+  position: relative;
+}
+aside {
+  width: 64px;
+  aspect-ratio: 2 / 4;
+  right: -5%;
+  position: absolute;
+  background-color: #c4b18e;
+  border: 4px groove #a38b5f;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+aside a img {
+  max-width: 32px;
+  border-radius: 50%;
+  transition: 400ms;
+}
+
+aside #linkedin:hover {
+  background-color: #007fbc;
+}
+
+aside #github:hover {
+  background-color: #f0563a;
+}
+
+button#toTop {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  right: -5%;
+  bottom: -300%;
+  border-radius: 50%;
+  background-color: #f00;
+  box-shadow: 0 0 -1em rgba(255, 0, 0, 0.75);
+  filter: drop-shadow(0 0 1em rgba(0, 0, 0, 0.25));
+  color: #fff;
+  font-size: 35px;
+  cursor: pointer;
+}
