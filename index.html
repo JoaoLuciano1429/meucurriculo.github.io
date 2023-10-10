@@ -2,8 +2,19 @@
 <html lang="pt-br" id="top">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:title"
+      content="Currículo de João Luciano Salim Drumond"
+    />
+    <meta
+      property="og:description"
+      content="Meu currículo profissional como desenvolvedor em versão página de web."
+    />
+    <meta
+      property="og:image"
+      content="https://cdn-icons-png.flaticon.com/512/6747/6747196.png"
+    />
     <title>Currículo de João Luciano Salim Drumond</title>
     <link
       rel="shortcut icon"
@@ -52,6 +63,7 @@
             ></span
           >
         </h2>
+        <button id="viewCert" type="button">Ver certificados</button>
       </section>
       <hr />
       <section id="objetivosProfissionais">
@@ -105,22 +117,6 @@
             >
           </h4>
         </div>
-        <h3 normal class="links_-1">
-          <a
-            href="img/Certificado-Farroupilha.png"
-            download="Certificado-Farroupilha"
-          >
-            &rarr; Baixar Certificado de Conclusão do Ensino Fundamental do
-            Colégio Farroupilha
-          </a>
-        </h3>
-        <br />
-        <h3 normal class="links0">
-          <a href="img/Certificado-Liceu.png" download="Certificado-Liceu"
-            >&rarr; Baixar Certificado de Conclusão do Ensino Médio do Colégio
-            Liceu Salesiano</a
-          >
-        </h3>
       </section>
       <hr />
       <section id="experienciaProfissional">
@@ -177,70 +173,6 @@
             <span normal>Conclusão: 27 de setembro de 2023</span>
           </h4>
         </div>
-        <h3 negrito style="color: #000" class="t2">Obsoleto:</h3>
-        <div id="HTML5LegacyCard">
-          <img src="img/certificado_onebitcode_html5_pages-to-jpg-0001.jpg" />
-          <h4>
-            <span bolditalic style="color: #000">Módulo: HTML5 (Legado)</span>
-            <br />
-            <span obliquo>Conclusão: 7 de fevereiro de 2023</span>
-          </h4>
-        </div>
-        <div id="JS1card">
-          <img src="./img/certificadoonebitcodejs1-0.jpg" />
-          <h4>
-            <span bolditalic style="color: #000"
-              >Módulo: Javascript I - Lógica de Programação</span
-            >
-            <br />
-            <span obliquo>Conclusão: 30 de março de 2023</span>
-          </h4>
-        </div>
-        <div id="JS2card">
-          <img src="./img/certificado_onebitcode_js2_pages-to-jpg-0001.jpg" />
-          <h4>
-            <span bolditalic style="color: #000"
-              >Módulo: Javascript II - DOM</span
-            >
-            <br /><br />
-            <span obliquo>Conclusão: 16 de abril de 2023</span>
-          </h4>
-        </div>
-        <div id="linksDiv">
-          <h3 normal class="links1">
-            <a
-              href="pdf/certificado_onebitcode_html5.pdf"
-              download="certificado_onebitcode_html5"
-              >&rarr; Baixar Certificado de Conclusão do Módulo de HTML5</a
-            >
-          </h3>
-          <br />
-          <h3 normal class="links2">
-            <a
-              href="pdf/certificado_onebitcode_css3.pdf"
-              download="certificado_onebitcode_css3"
-              >&rarr; Baixar Certificado de Conclusão do Módulo de CSS3</a
-            >
-          </h3>
-          <br />
-          <h3 normal class="links3">
-            <a
-              href="pdf/certificado_onebitcode_css-moderno.pdf"
-              download="certificado_onebitcode_css-moderno"
-              >&rarr; Baixar Certificado de Conclusão do Módulo de CSS
-              Moderno</a
-            >
-          </h3>
-          <br />
-          <h3 normal class="links4">
-            <a
-              href="pdf/certificado_onebitcode_javascript.pdf"
-              download="certificado_onebitcode_javascript"
-            >
-              &rarr; Baixar Certificado de Conclusão do Módulo de Javascript
-            </a>
-          </h3>
-        </div>
       </section>
     </div>
     <aside>
@@ -261,4 +193,62 @@
       <a href="#top"><button id="toTop">&uArr;</button></a></abbr
     >
   </body>
+  <superbody>
+    <nav>
+      <h2 normal>Certificados de João Luciano Salim Drumond</h2>
+      <button id="closeCert" type="button">&times;</button>
+    </nav>
+    <main>
+      <section id="slider">
+        <div id="slides">
+          <figure id="CertFarroupilha" class="slide">
+            <img src="img/Certificado-Farroupilha.png" />
+            <h3 normal>
+              Certificado de Conclusão do Ensino Fundamental: Colégio
+              Farroupilha de Campinas
+            </h3>
+          </figure>
+          <figure id="CertLiceu" class="slide">
+            <img src="img/Certificado-Liceu.png" />
+            <h3 normal>
+              Certificado de Conclusão do Ensino Médio: Colégio Liceu Nossa
+              Senhora Auxiliadora
+            </h3>
+          </figure>
+          <figure id="CertHTML5" class="slide">
+            <img src="img/certificado_onebitcode_html5_page-0001.jpg" />
+            <h3 normal>
+              Certificado de Conclusão do Módulo de HTML5: OneBitCode
+            </h3>
+          </figure>
+          <figure id="CertCSS3" class="slide">
+            <img src="img/certificado_onebitcode_css3_page-0001.jpg" />
+            <h3 normal>
+              Certificado de Conclusão do Módulo de CSS3: OneBitCode
+            </h3>
+          </figure>
+          <figure id="CertCSSmoderno" class="slide">
+            <img src="img/certificado_onebitcode_css-moderno_page-0001.jpg" />
+            <h3 normal>
+              Certificado de Conclusão do Módulo de CSS Moderno: OneBitCode
+            </h3>
+          </figure>
+          <figure id="CertJS" class="slide">
+            <img src="img/certificado_onebitcode_javascript.jpg" />
+            <h3 normal>
+              Certificado de Conclusão do Módulo de Javascript: OneBitCode
+            </h3>
+          </figure>
+        </div>
+        <div id="slider__nav">
+          <a href="#CertFarroupilha" id="sli1" class="nav__link"></a>
+          <a href="#CertLiceu" id="sli2" class="nav__link"></a>
+          <a href="#CertHTML5" id="sli3" class="nav__link"></a>
+          <a href="#CertCSS3" id="sli4" class="nav__link"></a>
+          <a href="#CertCSSmoderno" id="sli5" class="nav__link"></a>
+          <a href="#CertJS" id="sli6" class="nav__link"></a>
+        </div>
+      </section>
+    </main>
+  </superbody>
 </html>
