@@ -33,3 +33,11 @@
 [bolditalic] {
   font-family: Futura-Std-Bold-Oblique;
 }
+
+#viewCert {
+  font-family: Futura-Std-Book;
+}
+
+#viewCert:hover {
+  font-family: Futura-Std-Heavy;
+}
