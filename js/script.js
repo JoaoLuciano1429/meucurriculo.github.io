@@ -26,3 +26,17 @@ closeBtn.addEventListener("click", () => {
   showingCert.classList.remove("showCert");
   closeBtn.classList.remove("showCert");
 });
+
+alert(
+  `Note que em alguns dispostivos de telas de tamanhos diferentes essa página pode ser exibida de forma inviável.
+  \nSugestão: Acesse esse site em um computador para uma melhor experiência.
+  
+  Para informações adicionais, acesse o console do navegador estando nesta página.`
+);
+
+console.info(
+  "Caso não queira visualizar os certificados em forma de slides, acesse este link abaixo para download:"
+);
+console.log(
+  "https://drive.google.com/drive/folders/177oecUc4tGtRGWiPhJdtzKi4ynWsw7bO?usp=sharing"
+);
