@@ -37,6 +37,15 @@ body {
   scroll-behavior: smooth;
 }
 
+html {
+  position: relative;
+}
+
+body,
+superbody {
+  position: absolute;
+}
+
 html > body * {
   z-index: 0;
 }
@@ -47,7 +56,7 @@ html > superbody * {
 
 #border {
   transform: translateY(750px);
-  border: 4px #333 double;
+  border: transparent;
   width: 80vw;
   height: auto;
   display: grid;
@@ -81,6 +90,7 @@ section#dadosPessoais {
 }
 
 #viewCert {
+  visibility: visible;
   grid-area: viewCert;
   width: 100px;
   aspect-ratio: 2 / 2;
@@ -100,6 +110,28 @@ section#dadosPessoais {
   outline: 1px #222 dashed;
   outline-offset: 0;
   transform: rotate(360deg);
+}
+
+#downloadCert {
+  display: none;
+  grid-area: downloadCert;
+  width: 100px;
+  aspect-ratio: 2 / 2;
+  background-color: #333;
+  color: #f5deb3;
+  border: 4px double #a38b5f;
+  border-radius: 15px;
+  font-size: 15px;
+  outline: 1px #222 solid;
+  outline-offset: 1px;
+  transition: 1s ease-in-out;
+}
+
+#downloadCert:hover {
+  cursor: pointer;
+  border: 4px solid #c4b18e;
+  outline: 1px #222 dashed;
+  outline-offset: 0;
 }
 
 h1,
@@ -509,7 +541,7 @@ superbody {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #000000db;
+  background-color: #0f0f0f;
   width: 110vw;
   height: 100vh;
 }
@@ -520,7 +552,7 @@ superbody nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #000000de;
+  background-color: #111;
 }
 
 superbody nav h2 {
@@ -542,7 +574,7 @@ superbody main {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #000000cd;
+  background-color: #222;
   width: 100%;
   height: 90%;
 }
