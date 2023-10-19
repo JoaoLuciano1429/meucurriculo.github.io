@@ -3,6 +3,9 @@ Meu currículo profissional como desenvolvedor em versão página de web.
 
 # Atualizações recentes:
 
+\\ 19/10/2023
+(+) Adicionado certificado de Typescript
+
 \\ 12/10/2023
 (+) Adicionado suporte de responsividade à diferentes tamanhos de tela, de pequenos tablets à Smart TVs.
 (·) Borda das informações do currículo agora é transparente para todas as telas suportadas, exceto para Smart TVs.
