@@ -99,16 +99,17 @@
   #HTML5card,
   #CSS3card,
   #CSSmodernoCard,
-  #JScard {
+  #JScard,
+  #TScard {
     width: 300px;
     height: 260px;
   }
 
-  :is(#HTML5card, #CSS3card, #CSSmodernoCard, #JScard) > img {
+  :is(#HTML5card, #CSS3card, #CSSmodernoCard, #JScard, #TScard) > img {
     width: 300px;
   }
 
-  :is(#HTML5card, #CSS3card, #CSSmodernoCard, #JScard) h4 {
+  :is(#HTML5card, #CSS3card, #CSSmodernoCard, #JScard, #TScard) h4 {
     transform: translateY(152px);
     padding-right: 55px;
   }
@@ -285,23 +286,25 @@
       "img-icon subTitle subTitle subTitle"
       "texto1 texto1 texto1 texto1"
       "HTML5card HTML5card CSS3card CSS3card"
-      "CSSmodernoCard CSSmodernoCard JScard JScard";
+      "CSSmodernoCard CSSmodernoCard JScard JScard"
+      "TScard TScard TScard TScard";
     margin-right: 70px;
   }
 
   #HTML5card,
   #CSS3card,
   #CSSmodernoCard,
-  #JScard {
+  #JScard,
+  #TScard {
     width: 200px;
     height: 160px;
   }
 
-  :is(#HTML5card, #CSS3card, #CSSmodernoCard, #JScard) > img {
+  :is(#HTML5card, #CSS3card, #CSSmodernoCard, #JScard, #TScard) > img {
     width: 200px;
   }
 
-  :is(#HTML5card, #CSS3card, #CSSmodernoCard, #JScard) h4 {
+  :is(#HTML5card, #CSS3card, #CSSmodernoCard, #JScard, #TScard) h4 {
     font-size: 12px;
     transform: translateY(100px);
     padding-right: 13px;
@@ -428,7 +431,8 @@
       "img-icon subTitle subTitle subTitle"
       "texto1 texto1 texto1 texto1"
       "HTML5card HTML5card CSS3card CSS3card"
-      "CSSmodernoCard CSSmodernoCard JScard JScard";
+      "CSSmodernoCard CSSmodernoCard JScard JScard"
+      "TScard TScard TScard TScard";
     margin-right: 150px;
     gap: 5px 40px;
   }
@@ -444,16 +448,17 @@
   #HTML5card,
   #CSS3card,
   #CSSmodernoCard,
-  #JScard {
+  #JScard,
+  #TScard {
     width: 150px;
     height: 110px;
   }
 
-  :is(#HTML5card, #CSS3card, #CSSmodernoCard, #JScard) > img {
+  :is(#HTML5card, #CSS3card, #CSSmodernoCard, #JScard, #TScard) > img {
     width: 150px;
   }
 
-  :is(#HTML5card, #CSS3card, #CSSmodernoCard, #JScard) h4 {
+  :is(#HTML5card, #CSS3card, #CSSmodernoCard, #JScard, #TScard) h4 {
     display: none;
   }
 
