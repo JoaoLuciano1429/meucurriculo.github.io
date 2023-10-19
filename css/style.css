@@ -379,7 +379,7 @@ section#objetivosProfissionais {
     "img-icon subTitle subTitle subTitle"
     "texto1 texto1 texto1 texto1"
     "HTML5card HTML5card CSS3card CSSmodernoCard"
-    "JScard JScard JScard JScard";
+    "JScard JScard TScard TScard";
   gap: 0 20px;
 }
 
@@ -485,6 +485,27 @@ section#objetivosProfissionais {
 }
 
 #JScard h4 {
+  background-color: #ffffffad;
+  position: absolute;
+  transform: translateY(115px);
+}
+
+#TScard {
+  position: relative;
+  grid-area: TScard;
+  width: 250px;
+  height: 210px;
+  border: 2px #ddd solid;
+  border-radius: 20px;
+}
+
+#TScard > img {
+  position: absolute;
+  width: 250px;
+  height: auto;
+}
+
+#TScard h4 {
   background-color: #ffffffad;
   position: absolute;
   transform: translateY(115px);
@@ -679,6 +700,10 @@ superbody main #slider #slides {
 
 #sli6 {
   background-image: url("../img/certificado_onebitcode_javascript.jpg");
+}
+
+#sli7 {
+  background-image: url("../img/certificado_onebitcode_typescript_page-0001.jpg");
 }
 
 .showCert {
