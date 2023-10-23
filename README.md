@@ -3,8 +3,12 @@ Meu currículo profissional como desenvolvedor em versão página de web.
 
 # Atualizações recentes:
 
+\\ 23/10/2023 
+  (·) Atualizado certificado de CSS3.
+  (+) Acrescentadas informações sobre a hospedagem do website no console.
+
 \\ 19/10/2023
-(+) Adicionado certificado de Typescript
+(+) Adicionado certificado de Typescript.
 
 \\ 12/10/2023
 (+) Adicionado suporte de responsividade à diferentes tamanhos de tela, de pequenos tablets à Smart TVs.
@@ -14,7 +18,7 @@ Meu currículo profissional como desenvolvedor em versão página de web.
 (·) Para telas maiores, terá o botão de ver certificados como apresentação de slides, mas para telas menores, com largura abaixo de 768px até uns 490px, será um botão de link de download da pasta dos certificados, o mesmo que aparece no console do navegador ao carregar o site.
 
 \\ 10/10/2023
-(+) Adicionado botão para ver os certificados
+(+) Adicionado botão para ver os certificados.
 (·) Ao clicar no botão de visualizar os certificados, abrirá uma tela de slides sobrepondo a página.
 (·) Estes certificados podem ser visualizados como slides, e ao passar o mouse sobre ele, um zoom é aplicado.
 (·) A cor de seleção do conteúdo da página mudou de azul para laranja.
