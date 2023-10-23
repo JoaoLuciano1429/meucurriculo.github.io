@@ -40,3 +40,8 @@ console.info(
 console.log(
   "https://drive.google.com/drive/folders/177oecUc4tGtRGWiPhJdtzKi4ynWsw7bO?usp=sharing"
 );
+
+console.info(
+  "Este site é hospedado pelo Github Pages, cujos arquivos fonte estão no repositório abaixo (Recomendado ler o README.md para informações sobre atualizações):"
+);
+console.log("https://github.com/JoaoLuciano1429/meucurriculo.github.io");
