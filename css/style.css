@@ -336,7 +336,7 @@ section#objetivosProfissionais {
     "breakLine4 breakLine4 breakLine4 breakLine4"
     "breakLine4 breakLine4 breakLine4 breakLine4"
     "breakLine4 breakLine4 breakLine4 breakLine4"
-    "cardIBGE cardIBGE cardIBGE cardIBGE";
+    "cardIBGE cardIBGE cardPrefeitura cardPrefeitura";
   gap: 0 20px;
 }
 
@@ -365,6 +365,27 @@ section#objetivosProfissionais {
 
 #cardIBGE h4 {
   background-color: #cecece75;
+  position: absolute;
+  transform: translateY(150px);
+}
+
+#cardPrefeitura {
+  position: relative;
+  grid-area: cardPrefeitura;
+  width: 250px;
+  height: 210px;
+  border: 2px #ddd solid;
+  border-radius: 20px;
+}
+
+#cardPrefeitura > img {
+  position: absolute;
+  width: 250px;
+  height: auto;
+}
+
+#cardPrefeitura h4 {
+  background-color: #cececece;
   position: absolute;
   transform: translateY(150px);
 }
