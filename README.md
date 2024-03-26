@@ -3,6 +3,9 @@ Meu currículo profissional como desenvolvedor em versão página de web.
 
 # Atualizações recentes:
 
+\\ 26/03/2024
+  (+) Acrescentado botão de link para o meu portfólio na lateral da página.
+
 \\ 23/10/2023 
   (·) Atualizado certificado de CSS3.
   (+) Acrescentadas informações sobre a hospedagem do website no console.
