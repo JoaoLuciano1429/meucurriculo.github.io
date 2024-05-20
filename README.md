@@ -3,6 +3,9 @@ Meu currículo profissional como desenvolvedor em versão página de web.
 
 # Atualizações recentes:
 
+\\ 20/05/2024
+  (·) Melhoria na responsividade do card da Prefeitura, na seção de Experiência Profissional.
+
 \\ 26/03/2024
   (+) Acrescentado botão de link para o meu portfólio na lateral da página.
 
