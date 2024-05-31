@@ -113,16 +113,19 @@
   #CSS3card,
   #CSSmodernoCard,
   #JScard,
-  #TScard {
+  #TScard,
+  #gitGithubCard {
     width: 300px;
     height: 260px;
   }
 
-  :is(#HTML5card, #CSS3card, #CSSmodernoCard, #JScard, #TScard) > img {
+  :is(#HTML5card, #CSS3card, #CSSmodernoCard, #JScard, #TScard, #gitGithubCard)
+    > img {
     width: 300px;
   }
 
-  :is(#HTML5card, #CSS3card, #CSSmodernoCard, #JScard, #TScard) h4 {
+  :is(#HTML5card, #CSS3card, #CSSmodernoCard, #JScard, #TScard, #gitGithubCard)
+    h4 {
     transform: translateY(152px);
     padding-right: 55px;
   }
@@ -314,7 +317,7 @@
       "texto1 texto1 texto1 texto1"
       "HTML5card HTML5card CSS3card CSS3card"
       "CSSmodernoCard CSSmodernoCard JScard JScard"
-      "TScard TScard TScard TScard";
+      "TScard TScard gitGithubcard gitGithubcard";
     margin-right: 70px;
   }
 
@@ -322,16 +325,19 @@
   #CSS3card,
   #CSSmodernoCard,
   #JScard,
-  #TScard {
+  #TScard,
+  #gitGithubCard {
     width: 200px;
     height: 160px;
   }
 
-  :is(#HTML5card, #CSS3card, #CSSmodernoCard, #JScard, #TScard) > img {
+  :is(#HTML5card, #CSS3card, #CSSmodernoCard, #JScard, #TScard, #gitGithubCard)
+    > img {
     width: 200px;
   }
 
-  :is(#HTML5card, #CSS3card, #CSSmodernoCard, #JScard, #TScard) h4 {
+  :is(#HTML5card, #CSS3card, #CSSmodernoCard, #JScard, #TScard, #gitGithubCard)
+    h4 {
     font-size: 12px;
     transform: translateY(100px);
     padding-right: 13px;
@@ -473,7 +479,7 @@
       "texto1 texto1 texto1 texto1"
       "HTML5card HTML5card CSS3card CSS3card"
       "CSSmodernoCard CSSmodernoCard JScard JScard"
-      "TScard TScard TScard TScard";
+      "TScard TScard gitGithubcard gitGithubcard";
     margin-right: 150px;
     gap: 5px 40px;
   }
@@ -490,16 +496,19 @@
   #CSS3card,
   #CSSmodernoCard,
   #JScard,
-  #TScard {
+  #TScard,
+  #gitGithubCard {
     width: 150px;
     height: 110px;
   }
 
-  :is(#HTML5card, #CSS3card, #CSSmodernoCard, #JScard, #TScard) > img {
+  :is(#HTML5card, #CSS3card, #CSSmodernoCard, #JScard, #TScard, #gitGithubCard)
+    > img {
     width: 150px;
   }
 
-  :is(#HTML5card, #CSS3card, #CSSmodernoCard, #JScard, #TScard) h4 {
+  :is(#HTML5card, #CSS3card, #CSSmodernoCard, #JScard, #TScard, #gitGithubCard)
+    h4 {
     display: none;
   }
 

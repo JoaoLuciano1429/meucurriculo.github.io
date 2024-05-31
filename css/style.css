@@ -399,8 +399,9 @@ section#objetivosProfissionais {
     "breakLine5 breakLine5 breakLine5 breakLine5"
     "img-icon subTitle subTitle subTitle"
     "texto1 texto1 texto1 texto1"
-    "HTML5card HTML5card CSS3card CSSmodernoCard"
-    "JScard JScard TScard TScard";
+    "HTML5card HTML5card CSS3card CSS3card"
+    "CSSmodernoCard CSSmodernoCard JScard JScard"
+    "TScard TScard gitGithubcard gitGithubcard";
   gap: 0 20px;
 }
 
@@ -527,6 +528,27 @@ section#objetivosProfissionais {
 }
 
 #TScard h4 {
+  background-color: #ffffffad;
+  position: absolute;
+  transform: translateY(115px);
+}
+
+#gitGithubCard {
+  position: relative;
+  grid-area: gitGithubcard;
+  width: 250px;
+  height: 210px;
+  border: 2px #ddd solid;
+  border-radius: 20px;
+}
+
+#gitGithubCard > img {
+  position: absolute;
+  width: 250px;
+  height: auto;
+}
+
+#gitGithubCard h4 {
   background-color: #ffffffad;
   position: absolute;
   transform: translateY(115px);
@@ -729,6 +751,10 @@ superbody main #slider #slides {
 
 #sli7 {
   background-image: url("../img/certificado_onebitcode_typescript_page-0001.jpg");
+}
+
+#sli8 {
+  background-image: url("../img/certificado_onebitcode_gitgithub_page-0001.jpg");
 }
 
 .showCert {
