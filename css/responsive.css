@@ -1,538 +1,160 @@
-/*Extra Large screens*/
-@media (1920px <= width) {
-  #border {
-    transform: translateY(780px);
-    border: 8px #333 double;
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width: 767px) {
+  .container {
+    padding: 10px;
   }
 
   h1 {
-    font-size: 60px;
+    font-size: 24px;
   }
 
-  #dadosPessoais > figure.photo > img {
-    width: 300px;
-    height: 300px;
-    border: 4px #fff solid;
-  }
-
-  #dadosPessoais h2 {
-    font-size: 37px;
-  }
-
-  #viewCert {
-    width: 150px;
+  h2 {
     font-size: 20px;
-    border: 6px double #a38b5f;
-    border-radius: 20px;
-    outline: 2px #222 solid;
   }
 
-  hr {
-    border: 2px #444 solid;
+  #dadosPessoais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
-  .text-content {
-    font-size: 30px;
+  #dadosPessoais .photo {
+    order: -1;
+    margin-bottom: 20px;
   }
 
-  #cardLiceu {
-    width: 300px;
-    height: 260px;
+  #dadosPessoais .name {
+    order: 0;
+    margin-top: 0;
   }
 
-  #cardLiceu > img {
-    width: 300px;
+  figure.photo img {
+    max-width: 150px;
   }
 
-  #cardLiceu h4 {
-    transform: translateY(130px);
-  }
-
-  #cardFarroupilha {
-    width: 300px;
-    height: 260px;
-  }
-
-  #cardFarroupilha > img {
-    width: 300px;
-  }
-
-  #cardFarroupilha h4 {
-    transform: translateY(150px);
-  }
-
-  #cardUNISAL {
-    width: 300px;
-    height: 200px;
-  }
-
-  #cardUNISAL .loader {
-    width: 72px;
-    height: 72px;
-  }
-
-  #cardIBGE {
-    width: 300px;
-    height: 260px;
-  }
-
-  #cardIBGE > img {
-    width: 300px;
-  }
-
-  #cardIBGE h4 {
-    transform: translateY(190px);
-  }
-
-  #cardPrefeitura {
-    width: 300px;
-    height: 260px;
-  }
-
-  #cardPrefeitura > img {
-    width: 300px;
-  }
-
-  #cardPrefeitura h4 {
-    transform: translateY(190px);
-  }
-
-  .img-icon {
-    width: 53px;
-  }
-
-  .subTitle {
-    font-size: 27px;
-  }
-
-  #cursosExtracurriculares h3 {
-    font-size: 30px;
-  }
-
-  #HTML5card,
-  #CSS3card,
-  #CSSmodernoCard,
-  #JScard,
-  #TScard,
-  #gitGithubCard {
-    width: 300px;
-    height: 260px;
-  }
-
-  :is(#HTML5card, #CSS3card, #CSSmodernoCard, #JScard, #TScard, #gitGithubCard)
-    > img {
-    width: 300px;
-  }
-
-  :is(#HTML5card, #CSS3card, #CSSmodernoCard, #JScard, #TScard, #gitGithubCard)
-    h4 {
-    transform: translateY(152px);
-    padding-right: 55px;
-  }
-
-  aside {
-    width: 128px;
-    border: 5px groove #a38b5f;
-    border-radius: 20px;
-  }
-
-  aside a img {
-    max-width: 64px;
-  }
-
-  button#toTop {
-    width: 140px;
-    height: 140px;
-    font-size: 70px;
-    border-width: 3px;
-    bottom: -190%;
-  }
-
-  superbody main #slider {
-    max-width: 1200px;
-    height: 750px;
-  }
-
-  .slide {
-    height: 600px;
-  }
-
-  .slide img {
-    width: 770px;
-  }
-
-  .slide h3 {
-    font-size: 28px;
-  }
-
-  .slider__nav {
-    width: 400px;
-    height: 170px;
-  }
-
-  .nav__link {
-    width: 110px;
-    height: 110px;
-  }
-}
-
-/* Desktops */
-@media (1200px <= width <= 1919px) {
-  button#toTop {
-    bottom: -245%;
-  }
-}
-
-/* Large tablets/laptops */
-@media (992px <= width <= 1199px) {
-  button#toTop {
-    bottom: -185%;
-  }
-}
-
-/* Small tablets */
-@media (768px <= width <= 991px) {
-  #border {
-    transform: translateY(600px);
-    width: 85vw;
-  }
-
-  h1 {
-    font-size: 40px;
-  }
-
-  section#dadosPessoais {
-    display: grid;
-    grid-template-areas:
-      "title title title title"
-      "breakLine breakLine breakLine breakLine"
-      "breakLine breakLine breakLine breakLine"
-      "photo photo name name"
-      "photo photo genre genre"
-      "photo photo birthday birthday"
-      "photo photo age age"
-      "photo photo phone phone"
-      "photo photo email email"
-      "photo photo viewCert viewCert";
-    gap: 0 20px;
-    padding-right: 130px;
-  }
-
-  #dadosPessoais > figure.photo > img {
-    width: 150px;
-    height: 150px;
+  #dadosPessoais aside {
+    flex-direction: column;
   }
 
   #dadosPessoais h2 {
-    font-size: 22px;
-  }
-
-  hr {
-    width: 80vw;
-    margin-right: 130px;
-  }
-
-  section#objetivosProfissionais {
-    margin-right: 70px;
+    font-size: 18px;
   }
 
   .text-content {
     font-size: 16px;
   }
 
-  #formacaoAcademica {
-    margin-right: 85px;
+  .card {
+    width: 100%;
+    margin-bottom: 15px;
   }
 
-  #cardLiceu,
-  #cardFarroupilha,
-  #cardUNISAL {
-    width: 200px;
-    height: 160px;
+  .card h4 {
+    font-size: 14px;
   }
 
-  :is(#cardLiceu, #cardFarroupilha) > img {
-    width: 200px;
-  }
-
-  :is(#cardLiceu, #cardFarroupilha, #cardUNISAL) h4 {
-    font-size: 12px;
-    transform: translateY(85px);
-  }
-
-  #cardUNISAL .loader {
-    width: 52px;
-    height: 52px;
-  }
-
-  #experienciaProfissional {
-    margin-right: 150px;
-  }
-
-  #cardIBGE {
-    width: 200px;
-    height: 160px;
-  }
-
-  #cardIBGE > img {
-    width: 200px;
-  }
-
-  #cardIBGE h4 {
-    font-size: 12px;
-    transform: translateY(130px);
-  }
-
-  #cardPrefeitura {
-    width: 200px;
-    height: 160px;
-  }
-
-  #cardPrefeitura > img {
-    width: 200px;
-  }
-
-  #cardPrefeitura h4 {
-    font-size: 12px;
-    transform: translateY(130px);
-  }
-
-  .img-icon {
-    width: 33px;
-    height: auto;
-  }
-
-  .subTitle {
-    font-size: 17px;
-  }
-
-  #cursosExtracurriculares {
-    display: grid;
-    grid-template-areas:
-      "title5 title5 title5 title5"
-      "breakLine5 breakLine5 breakLine5 breakLine5"
-      "breakLine5 breakLine5 breakLine5 breakLine5"
-      "breakLine5 breakLine5 breakLine5 breakLine5"
-      "img-icon subTitle subTitle subTitle"
-      "texto1 texto1 texto1 texto1"
-      "HTML5card HTML5card CSS3card CSS3card"
-      "CSSmodernoCard CSSmodernoCard JScard JScard"
-      "TScard TScard gitGithubcard gitGithubcard";
-    margin-right: 70px;
-  }
-
-  #HTML5card,
-  #CSS3card,
-  #CSSmodernoCard,
-  #JScard,
-  #TScard,
-  #gitGithubCard {
-    width: 200px;
-    height: 160px;
-  }
-
-  :is(#HTML5card, #CSS3card, #CSSmodernoCard, #JScard, #TScard, #gitGithubCard)
-    > img {
-    width: 200px;
-  }
-
-  :is(#HTML5card, #CSS3card, #CSSmodernoCard, #JScard, #TScard, #gitGithubCard)
-    h4 {
-    font-size: 12px;
-    transform: translateY(100px);
-    padding-right: 13px;
-  }
-
-  button#toTop {
-    bottom: -210%;
-    right: -9%;
-  }
-
-  aside {
-    right: -8%;
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
-/* Extra small devices */
-@media (481px <= width <= 767px) {
-  #viewCert {
-    display: none;
+/* Tablets and larger smartphones ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    padding: 20px;
   }
 
-  #downloadCert {
-    display: block;
-    visibility: visible;
-    width: 75px;
-    border-radius: 10px;
+  h1 {
+    font-size: 32px;
   }
 
-  section#dadosPessoais {
-    display: grid;
-    grid-template-areas:
-      "title title title title"
-      "breakLine breakLine breakLine breakLine"
-      "breakLine breakLine breakLine breakLine"
-      "photo photo name name"
-      "photo photo genre genre"
-      "photo photo birthday birthday"
-      "photo photo age age"
-      "photo photo phone phone"
-      "photo photo email email"
-      "photo photo downloadCert downloadCert";
-    gap: 0 20px;
-    padding-right: 180px;
+  h2 {
+    font-size: 28px;
+  }
+
+  figure.photo img {
+    max-width: 175px; /* Ajuste conforme necessário */
+  }
+
+  #dadosPessoais {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #dadosPessoais h2 {
+    font-size: 20px;
+  }
+
+  .text-content {
+    font-size: 18px;
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+
+  .card h4 {
+    font-size: 15px;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1025px) {
+  .container {
+    padding: 30px;
   }
 
   h1 {
     font-size: 36px;
   }
 
-  #dadosPessoais > figure.photo > img {
-    width: 125px;
-    height: 125px;
+  h2 {
+    font-size: 32px;
+  }
+
+  figure.photo img {
+    max-width: 200px; /* Ajuste conforme necessário */
+  }
+
+  #dadosPessoais {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   #dadosPessoais h2 {
-    font-size: 18px;
+    font-size: 24px;
   }
 
-  hr {
-    margin-right: 140px;
+  .text-content {
+    font-size: 20px;
   }
 
-  #objetivosProfissionais {
-    margin-right: 150px;
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
-  #objetivosProfissionais p {
-    font-size: 18px;
+  .card {
+    width: 30%;
+    margin-bottom: 20px;
   }
 
-  #formacaoAcademica {
-    margin-right: 150px;
-  }
-
-  #cardLiceu,
-  #cardFarroupilha,
-  #cardUNISAL {
-    width: 150px;
-    height: 110px;
-  }
-
-  :is(#cardLiceu, #cardFarroupilha, #cardUNISAL) > img {
-    width: 150px;
-  }
-
-  :is(#cardLiceu, #cardFarroupilha) h4 {
-    display: none;
-  }
-
-  #cardUNISAL h4 {
-    transform: translateY(50px);
-    font-size: 10px;
-  }
-
-  #cardUNISAL .loader {
-    width: 40px;
-    height: 40px;
-  }
-
-  #experienciaProfissional {
-    margin-right: 150px;
-  }
-
-  #cardIBGE {
-    width: 150px;
-    height: 110px;
-  }
-
-  #cardIBGE > img {
-    width: 150px;
-  }
-
-  #cardIBGE h4 {
-    font-size: 12px;
-    transform: translateY(85px);
-  }
-
-  #cardPrefeitura {
-    width: 150px;
-    height: 110px;
-  }
-
-  #cardPrefeitura > img {
-    width: 150px;
-  }
-
-  #cardPrefeitura h4 {
-    font-size: 12px;
-    transform: translateY(85px);
-  }
-
-  #cursosExtracurriculares {
-    grid-template-areas:
-      "title5 title5 title5 title5"
-      "breakLine5 breakLine5 breakLine5 breakLine5"
-      "breakLine5 breakLine5 breakLine5 breakLine5"
-      "breakLine5 breakLine5 breakLine5 breakLine5"
-      "img-icon subTitle subTitle subTitle"
-      "texto1 texto1 texto1 texto1"
-      "HTML5card HTML5card CSS3card CSS3card"
-      "CSSmodernoCard CSSmodernoCard JScard JScard"
-      "TScard TScard gitGithubcard gitGithubcard";
-    margin-right: 150px;
-    gap: 5px 40px;
-  }
-
-  .img-icon {
-    width: 22px;
-  }
-
-  .subTitle {
-    font-size: 17px;
-  }
-
-  #HTML5card,
-  #CSS3card,
-  #CSSmodernoCard,
-  #JScard,
-  #TScard,
-  #gitGithubCard {
-    width: 150px;
-    height: 110px;
-  }
-
-  :is(#HTML5card, #CSS3card, #CSSmodernoCard, #JScard, #TScard, #gitGithubCard)
-    > img {
-    width: 150px;
-  }
-
-  :is(#HTML5card, #CSS3card, #CSSmodernoCard, #JScard, #TScard, #gitGithubCard)
-    h4 {
-    display: none;
-  }
-
-  aside {
-    width: 128px;
-    aspect-ratio: 4 / 2;
-    flex-direction: row;
-    right: 40%;
-    top: 10%;
-  }
-
-  #border {
-    transform: translateY(500px);
-  }
-
-  button#toTop {
-    width: 100%;
-    aspect-ratio: 10 / 2;
-    border-radius: 20px;
-    bottom: -110%;
-    right: -2%;
-  }
-
-  button#toTop::after {
-    content: " Ir para o topo";
+  .card h4 {
+    font-size: 16px;
   }
 }

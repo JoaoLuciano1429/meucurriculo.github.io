@@ -14,25 +14,28 @@ function getAge(dateString) {
 document.getElementById("ageDisplay").innerText = getAge("2003/09/06");
 
 const certBtn = document.getElementById("viewCert");
-const showingCert = document.querySelector("superbody");
+const showingCert = document.querySelector(".certificates-modal");
 const closeBtn = document.getElementById("closeCert");
 
 certBtn.addEventListener("click", () => {
-  showingCert.classList.add("showCert");
-  closeBtn.classList.add("showCert");
+  showingCert.classList.add("show");
 });
 
 closeBtn.addEventListener("click", () => {
-  showingCert.classList.remove("showCert");
-  closeBtn.classList.remove("showCert");
+  showingCert.classList.remove("show");
 });
 
-alert(
-  `Note que em alguns dispostivos de telas de tamanhos diferentes essa página pode ser exibida de forma inviável.
-  \nSugestão: Acesse esse site em um computador para uma melhor experiência.
-  
-  Para informações adicionais, acesse o console do navegador estando nesta página.`
-);
+window.onscroll = function () {
+  const toTopButton = document.getElementById("toTop");
+  if (
+    document.body.scrollTop > window.innerHeight ||
+    document.documentElement.scrollTop > window.innerHeight
+  ) {
+    toTopButton.classList.add("show");
+  } else {
+    toTopButton.classList.remove("show");
+  }
+};
 
 console.info(
   "Caso não queira visualizar os certificados em forma de slides, acesse este link abaixo para download:"

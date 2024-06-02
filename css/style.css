@@ -26,43 +26,30 @@
   background-color: #f84;
 }
 
-html,
-body {
-  background-color: #f5deb3;
-  width: 90vw;
-  height: 100vh;
-  display: grid;
-  place-items: center;
-  position: relative;
+html {
   scroll-behavior: smooth;
 }
 
-html {
-  position: relative;
-}
-
-body,
-superbody {
-  position: absolute;
+body {
+  background-color: #f5deb3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 0;
 }
 
 html > body * {
   z-index: 0;
 }
 
-html > superbody * {
-  z-index: 1;
-}
-
-#border {
-  transform: translateY(750px);
-  border: transparent;
-  width: 80vw;
-  height: auto;
-  display: grid;
-  place-items: center;
-  gap: 25px;
-  position: absolute;
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 section#dadosPessoais {
@@ -71,19 +58,28 @@ section#dadosPessoais {
     "title title title title"
     "breakLine breakLine breakLine breakLine"
     "breakLine breakLine breakLine breakLine"
-    "breakLine breakLine breakLine breakLine"
     "photo photo name name"
     "photo photo genre genre"
     "photo photo birthday birthday"
     "photo photo age age"
     "photo photo phone phone"
-    "photo photo email viewCert";
-  gap: 0 20px;
+    "photo photo email email"
+    "photo photo viewCert viewCert"
+    "aside aside aside aside";
+  gap: 20px;
+}
+
+#dadosPessoais > figure.photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }
 
 #dadosPessoais > figure.photo > img {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: auto;
+  max-width: 200px;
   border: 3px #fff solid;
   border-radius: 50%;
   filter: drop-shadow(0 0 1em rgba(0, 0, 0, 0.5));
@@ -112,38 +108,28 @@ section#dadosPessoais {
   transform: rotate(360deg);
 }
 
-#downloadCert {
-  display: none;
-  grid-area: downloadCert;
-  width: 100px;
-  aspect-ratio: 2 / 2;
-  background-color: #333;
-  color: #f5deb3;
-  border: 4px double #a38b5f;
-  border-radius: 15px;
-  font-size: 15px;
-  outline: 1px #222 solid;
-  outline-offset: 1px;
-  transition: 1s ease-in-out;
-}
-
-#downloadCert:hover {
-  cursor: pointer;
-  border: 4px solid #c4b18e;
-  outline: 1px #222 dashed;
-  outline-offset: 0;
-}
-
 h1,
 h2,
 h3,
-h4,
-p {
+h4 {
   color: #333;
+}
+p {
+  color: #555;
 }
 
 h1 {
   font-size: 46px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+button {
+  cursor: pointer;
 }
 
 .title {
@@ -181,7 +167,12 @@ h1 {
 }
 
 a {
-  color: #050;
+  color: #005500;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 a:active {
@@ -234,18 +225,6 @@ section#objetivosProfissionais {
   max-width: 65vw;
 }
 
-#formacaoAcademica {
-  display: grid;
-  grid-template-areas:
-    "title3 title3 title3 title3"
-    "breakLine3 breakLine3 breakLine3 breakLine3"
-    "breakLine3 breakLine3 breakLine3 breakLine3"
-    "breakLine3 breakLine3 breakLine3 breakLine3"
-    "cardFarroupilha cardFarroupilha cardLiceu cardLiceu"
-    "cardUNISAL cardUNISAL cardUNISAL cardUNISAL";
-  gap: 0 80px;
-}
-
 .title3 {
   grid-area: title3;
 }
@@ -254,73 +233,53 @@ section#objetivosProfissionais {
   grid-area: breakLine3;
 }
 
-#cardLiceu {
-  position: relative;
-  grid-area: cardLiceu;
-  width: 250px;
-  height: 210px;
-  border: 2px #ddd solid;
-  border-radius: 20px;
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-#cardLiceu > img {
-  position: absolute;
-  width: 250px;
+.card img {
+  width: 100%;
   height: auto;
+  border-bottom: 1px solid #ddd;
 }
 
-#cardLiceu h4 {
-  background-color: #ffffffc7;
-  position: absolute;
-  transform: translateY(90px);
+.card h4 {
+  padding: 15px;
+  font-size: 16px;
+  color: #333;
+  background: #f5f5f5;
+  width: 100%;
 }
 
-#cardFarroupilha {
-  position: relative;
-  grid-area: cardFarroupilha;
-  width: 250px;
-  height: 210px;
-  border: 2px #ddd solid;
-  border-radius: 20px;
-}
-
-#cardFarroupilha > img {
-  position: absolute;
-  width: 250px;
-  height: auto;
-}
-
-#cardFarroupilha h4 {
-  background-color: #ffffffc7;
-  position: absolute;
-  transform: translateY(110px);
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 #cardUNISAL {
-  grid-area: cardUNISAL;
-  width: 250px;
-  height: 176.95px;
-  border: 2px #ddd solid;
-  border-radius: 20px;
   background-color: #181818;
-  position: relative;
+  color: #fff;
 }
 
 #cardUNISAL .loader {
-  position: absolute;
-  width: 64px;
-  height: 64px;
+  width: 8em;
+  height: 8em;
   border-radius: 50%;
   border-top: 8px solid rgba(255, 255, 255, 1);
   border-left: 8px solid rgba(255, 255, 255, 1);
   border-right: 8px solid rgba(255, 255, 255, 0);
   animation: spin 0.575s infinite linear;
-  left: 36%;
-}
-
-#cardUNISAL h4 {
-  position: absolute;
-  transform: translateY(85px);
+  margin-bottom: 15px;
 }
 
 @keyframes spin {
@@ -329,80 +288,12 @@ section#objetivosProfissionais {
   }
 }
 
-#experienciaProfissional {
-  display: grid;
-  grid-template-areas:
-    "title4 title4 title4 title4"
-    "breakLine4 breakLine4 breakLine4 breakLine4"
-    "breakLine4 breakLine4 breakLine4 breakLine4"
-    "breakLine4 breakLine4 breakLine4 breakLine4"
-    "cardIBGE cardIBGE cardPrefeitura cardPrefeitura";
-  gap: 0 20px;
-}
-
 .title4 {
   grid-area: title4;
 }
 
 .breakLine4 {
   grid-area: breakLine4;
-}
-
-#cardIBGE {
-  position: relative;
-  grid-area: cardIBGE;
-  width: 250px;
-  height: 210px;
-  border: 2px #ddd solid;
-  border-radius: 20px;
-}
-
-#cardIBGE > img {
-  position: absolute;
-  width: 250px;
-  height: auto;
-}
-
-#cardIBGE h4 {
-  background-color: #cecece75;
-  position: absolute;
-  transform: translateY(150px);
-}
-
-#cardPrefeitura {
-  position: relative;
-  grid-area: cardPrefeitura;
-  width: 250px;
-  height: 210px;
-  border: 2px #ddd solid;
-  border-radius: 20px;
-}
-
-#cardPrefeitura > img {
-  position: absolute;
-  width: 250px;
-  height: auto;
-}
-
-#cardPrefeitura h4 {
-  background-color: #cececece;
-  position: absolute;
-  transform: translateY(150px);
-}
-
-#cursosExtracurriculares {
-  display: grid;
-  grid-template-areas:
-    "title5 title5 title5 title5"
-    "breakLine5 breakLine5 breakLine5 breakLine5"
-    "breakLine5 breakLine5 breakLine5 breakLine5"
-    "breakLine5 breakLine5 breakLine5 breakLine5"
-    "img-icon subTitle subTitle subTitle"
-    "texto1 texto1 texto1 texto1"
-    "HTML5card HTML5card CSS3card CSS3card"
-    "CSSmodernoCard CSSmodernoCard JScard JScard"
-    "TScard TScard gitGithubcard gitGithubcard";
-  gap: 0 20px;
 }
 
 .title5 {
@@ -428,226 +319,114 @@ section#objetivosProfissionais {
   grid-area: texto1;
 }
 
-#HTML5card {
-  position: relative;
-  grid-area: HTML5card;
-  width: 250px;
-  height: 210px;
-  border: 2px #ddd solid;
-  border-radius: 20px;
-}
-
-#HTML5card > img {
-  position: absolute;
-  width: 250px;
-  height: auto;
-}
-
-#HTML5card h4 {
-  background-color: #ffffffad;
-  position: absolute;
-  transform: translateY(115px);
-}
-
-#CSS3card {
-  position: relative;
-  grid-area: CSS3card;
-  width: 250px;
-  height: 210px;
-  border: 2px #ddd solid;
-  border-radius: 20px;
-}
-
-#CSS3card > img {
-  position: absolute;
-  width: 250px;
-  height: auto;
-}
-
-#CSS3card h4 {
-  background-color: #ffffffad;
-  position: absolute;
-  transform: translateY(115px);
-}
-
-#CSSmodernoCard {
-  position: relative;
-  grid-area: CSSmodernoCard;
-  width: 250px;
-  height: 210px;
-  border: 2px #ddd solid;
-  border-radius: 20px;
-}
-
-#CSSmodernoCard > img {
-  position: absolute;
-  width: 250px;
-  height: auto;
-}
-
-#CSSmodernoCard h4 {
-  background-color: #ffffffad;
-  position: absolute;
-  transform: translateY(115px);
-}
-
-#JScard {
-  position: relative;
-  grid-area: JScard;
-  width: 250px;
-  height: 210px;
-  border: 2px #ddd solid;
-  border-radius: 20px;
-}
-
-#JScard > img {
-  position: absolute;
-  width: 250px;
-  height: auto;
-}
-
-#JScard h4 {
-  background-color: #ffffffad;
-  position: absolute;
-  transform: translateY(115px);
-}
-
-#TScard {
-  position: relative;
-  grid-area: TScard;
-  width: 250px;
-  height: 210px;
-  border: 2px #ddd solid;
-  border-radius: 20px;
-}
-
-#TScard > img {
-  position: absolute;
-  width: 250px;
-  height: auto;
-}
-
-#TScard h4 {
-  background-color: #ffffffad;
-  position: absolute;
-  transform: translateY(115px);
-}
-
-#gitGithubCard {
-  position: relative;
-  grid-area: gitGithubcard;
-  width: 250px;
-  height: 210px;
-  border: 2px #ddd solid;
-  border-radius: 20px;
-}
-
-#gitGithubCard > img {
-  position: absolute;
-  width: 250px;
-  height: auto;
-}
-
-#gitGithubCard h4 {
-  background-color: #ffffffad;
-  position: absolute;
-  transform: translateY(115px);
-}
-
-aside {
-  width: 64px;
-  aspect-ratio: 1 / 3;
-  right: -5%;
-  position: absolute;
+#dadosPessoais aside {
+  grid-area: aside;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   background-color: #c4b18e;
   border: 4px groove #a38b5f;
   border-radius: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 15px;
+  padding: 10px;
 }
 
-aside a img {
+#dadosPessoais aside a img {
   max-width: 32px;
   border-radius: 50%;
-  transition: 400ms;
+  transition: background-color 400ms;
 }
 
-aside #linkedin:hover {
+#linkedin:hover {
   background-color: #007fbc;
 }
 
-aside #github:hover {
+#github:hover {
   background-color: #f0563a;
 }
 
-aside #portfolio:hover {
+#portfolio:hover {
   background-color: #070;
 }
 
 button#toTop {
-  position: absolute;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
   width: 70px;
   height: 70px;
-  right: -5%;
-  bottom: -250%;
   border-radius: 50%;
   background-color: #f00;
-  box-shadow: 0 0 -1em rgba(255, 0, 0, 0.75);
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.75);
   filter: drop-shadow(0 0 1em rgba(0, 0, 0, 0.25));
   color: #fff;
   font-size: 35px;
   cursor: pointer;
+  z-index: 1000;
+  display: none;
 }
 
-superbody {
+button#toTop.show {
+  display: block;
+}
+
+.certificates-modal {
   visibility: hidden;
   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #0f0f0f;
-  width: 110vw;
-  height: 100vh;
+  z-index: 1000;
 }
 
-superbody nav {
+.certificates-modal.show {
+  visibility: visible;
+}
+
+.certificates-modal nav {
   width: 100%;
   height: 60px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: #111;
+  padding: 0 20px;
 }
 
-superbody nav h2 {
+.certificates-modal nav h2 {
   color: #fff;
 }
 
-superbody nav #closeCert {
+.certificates-modal nav #closeCert {
   cursor: pointer;
   background-color: #000;
   border: 1px #666 solid;
   border-radius: 50%;
   width: 50px;
-  aspect-ratio: 1 / 1;
+  height: 50px;
   color: #fff;
   font-size: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-superbody main {
+.certificates-modal main {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #222;
   width: 100%;
-  height: 90%;
+  height: calc(100% - 60px);
+  padding: 20px;
 }
 
-superbody main #slider {
+.certificates-modal main #slider {
   width: 100%;
   max-width: 800px;
   height: 500px;
@@ -657,15 +436,14 @@ superbody main #slider {
   position: relative;
 }
 
-superbody main #slider #slides {
+.certificates-modal main #slider #slides {
   display: flex;
   overflow-x: scroll;
-  position: relative;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
 }
 
-.slide {
+.certificates-modal .slide {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -683,21 +461,17 @@ superbody main #slider #slides {
   cursor: zoom-in;
 }
 
-.slide img {
+.certificates-modal .slide img {
   width: 550px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  -webkit-transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease;
 }
 
-.slide h3 {
+.certificates-modal .slide h3 {
   color: #fff;
   text-align: center;
 }
 
-.slide:hover img {
-  -webkit-transform: scale(1.15);
+.certificates-modal .slide:hover img {
   transform: scale(1.15);
 }
 
@@ -709,13 +483,14 @@ superbody main #slider #slides {
   pointer-events: none;
 }
 
-.slider__nav {
+.certificates-modal #slider__nav {
+  display: inline;
   box-sizing: border-box;
-  width: 200px;
+  width: auto;
   height: 85px;
   text-align: center;
 }
-.nav__link {
+.certificates-modal .nav__link {
   display: inline-block;
   height: 55px;
   width: 55px;

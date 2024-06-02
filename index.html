@@ -28,7 +28,7 @@
     <script src="js/script.js" defer></script>
   </head>
   <body>
-    <div id="border">
+    <div class="container">
       <section id="dadosPessoais">
         <h1 negrito class="title">Dados Pessoais</h1>
         <div class="breakLine"></div>
@@ -66,12 +66,27 @@
           >
         </h2>
         <button id="viewCert" type="button">Ver certificados</button>
-        <a
-          href="https://drive.google.com/drive/folders/177oecUc4tGtRGWiPhJdtzKi4ynWsw7bO?usp=sharing"
-          ><button id="downloadCert" type="button">
-            Baixar certificados
-          </button></a
-        >
+        <aside>
+          <a
+            target="_blank"
+            title="Meu LinkedIn"
+            href="https://www.linkedin.com/in/joaolucianosd/"
+            ><img id="linkedin" src="img/svg/linkedin-svgrepo-com.svg"
+          /></a>
+          <a
+            target="_blank"
+            title="Meu GitHub"
+            href="https://github.com/JoaoLuciano1429"
+            ><img id="github" src="img/svg/GitHub_Invertocat_Logo.svg"
+          /></a>
+          <a
+            target="_blank"
+            title="Meu Portfólio"
+            href="https://joaoluciano1429.github.io/meuportfolio.github.io/"
+          >
+            <img id="portfolio" src="img/pasta.png" />
+          </a>
+        </aside>
       </section>
       <hr />
       <section id="objetivosProfissionais">
@@ -87,221 +102,211 @@
       <hr />
       <section id="formacaoAcademica">
         <h1 negrito class="title3">Formação Acadêmica</h1>
-        <div class="breakLine3"></div>
-        <div id="cardFarroupilha">
-          <img
-            src="img/Certificado-Farroupilha.png"
-            alt="Certificado Farroupilha"
-          />
-          <h4>
-            <span negrito style="color: #000"
-              >Colégio Farroupilha de Campinas</span
-            >
-            <br />
-            <span normal
-              >Ensino Fundamental: De janeiro de 2010 a dezembro de 2018</span
-            >
-          </h4>
-        </div>
-        <div id="cardLiceu">
-          <img src="img/Certificado-Liceu.png" alt="Certificado Liceu" />
-          <h4>
-            <span negrito style="color: #000"
-              >Colégio Liceu Salesiano Nossa Senhora Auxiliadora</span
-            ><br />
-            <span normal
-              >Ensino Médio: De janeiro de 2019 a dezembro de 2021</span
-            >
-          </h4>
-        </div>
-        <div id="cardUNISAL">
-          <main><div class="loader"></div></main>
-          <h4>
-            <span negrito style="color: #fff"
-              >UNISAL - Centro Universitário Salesiano de São Paulo</span
-            ><br />
-            <span normal style="color: #ccc"
-              >Engenharia da Computação: janeiro de 2022 até o momento</span
-            >
-          </h4>
+        <div class="card-container">
+          <div class="card" id="cardFarroupilha">
+            <img
+              src="img/Certificado-Farroupilha.png"
+              alt="Certificado Farroupilha"
+            />
+            <h4>
+              <span negrito style="color: #000"
+                >Colégio Farroupilha de Campinas</span
+              >
+              <br />
+              <span normal
+                >Ensino Fundamental: De janeiro de 2010 a dezembro de 2018</span
+              >
+            </h4>
+          </div>
+          <div class="card" id="cardLiceu">
+            <img src="img/Certificado-Liceu.png" alt="Certificado Liceu" />
+            <h4>
+              <span negrito style="color: #000"
+                >Colégio Liceu Salesiano Nossa Senhora Auxiliadora</span
+              ><br />
+              <span normal
+                >Ensino Médio: De janeiro de 2019 a dezembro de 2021</span
+              >
+            </h4>
+          </div>
+          <div class="card" id="cardUNISAL">
+            <main><div class="loader"></div></main>
+            <h4>
+              <span negrito style="color: #000"
+                >UNISAL - Centro Universitário Salesiano de São Paulo</span
+              ><br />
+              <span normal style="color: #444"
+                >Engenharia da Computação: janeiro de 2022 até o momento</span
+              >
+            </h4>
+          </div>
         </div>
       </section>
       <hr />
       <section id="experienciaProfissional">
         <h1 negrito class="title4">Experiência Profissional</h1>
-        <div class="breakLine4"></div>
-        <div id="cardIBGE">
-          <img src="img/ibge.png" alt="IBGE-logo" />
-          <h4>
-            <span negrito style="color: #000">Recenseador • Temporário</span>
-            <br />
-            <span normal>De agosto de 2022 até novembro de 2022</span>
-          </h4>
-        </div>
-        <div id="cardPrefeitura">
-          <img src="img/prefeituraCampinas.png" alt="PrefeituraCampinas-logo" />
-          <h4>
-            <span negrito style="color: #000">Estagiário</span>
-            <br />
-            <span normal>De dezembro de 2023 até o momento</span>
-          </h4>
+        <div class="card-container">
+          <div class="card" id="cardIBGE">
+            <img src="img/ibge.png" alt="IBGE-logo" />
+            <h4>
+              <span negrito style="color: #000">Recenseador • Temporário</span>
+              <br />
+              <span normal>De agosto de 2022 até novembro de 2022</span>
+            </h4>
+          </div>
+          <div class="card" id="cardPrefeitura">
+            <img
+              src="img/prefeituraCampinas.png"
+              alt="PrefeituraCampinas-logo"
+            />
+            <h4>
+              <span negrito style="color: #000">Estagiário</span>
+              <br />
+              <span normal>De dezembro de 2023 até o momento</span>
+            </h4>
+          </div>
         </div>
       </section>
       <hr />
       <section id="cursosExtracurriculares">
         <h1 negrito class="title5">Cursos Extracurriculares</h1>
-        <div class="breakLine5"></div>
-        <img src="img/OneBitCode.jpg" alt="OneBitCode-logo" class="img-icon" />
         <h2 negrito class="subTitle">
+          <img
+            src="img/OneBitCode.jpg"
+            alt="OneBitCode-logo"
+            class="img-icon"
+          />
           OneBitCode - Curso Online Programador Full Stack JavaScript
           Profissional
         </h2>
         <h3 negrito style="color: #000" class="t1">Certificados:</h3>
-        <div id="HTML5card">
-          <img src="img/certificado_onebitcode_html5_page-0001.jpg" />
-          <h4>
-            <span negrito style="color: #000">Módulo: HTML5</span>
-            <br />
-            <span normal>Conclusão: 20 de setembro de 2023</span>
-          </h4>
-        </div>
-        <div id="CSS3card">
-          <img src="img/certificado_onebitcode_css3_page-0001.jpg" />
-          <h4>
-            <span negrito style="color: #000">Módulo: CSS3</span>
-            <br />
-            <span normal>Conclusão: 22 de outubro de 2023</span>
-          </h4>
-        </div>
-        <div id="CSSmodernoCard">
-          <img src="img/certificado_onebitcode_css-moderno_page-0001.jpg" />
-          <h4>
-            <span negrito style="color: #000">Módulo: CSS Moderno</span>
-            <br />
-            <span normal>Conclusão: 25 de fevereiro de 2023</span>
-          </h4>
-        </div>
-        <div id="JScard">
-          <img src="img/certificado_onebitcode_javascript.jpg" />
-          <h4>
-            <span negrito style="color: #000">Módulo: Javascript</span>
-            <br />
-            <span normal>Conclusão: 27 de setembro de 2023</span>
-          </h4>
-        </div>
-        <div id="TScard">
-          <img src="img/certificado_onebitcode_typescript_page-0001.jpg" />
-          <h4>
-            <span negrito style="color: #000">Módulo: Typescript</span>
-            <br />
-            <span normal>Conclusão: 19 de outubro de 2023</span>
-          </h4>
-        </div>
-        <div id="gitGithubCard">
-          <img src="img/certificado_onebitcode_gitgithub_page-0001.jpg" />
-          <h4>
-            <span negrito style="color: #000">Módulo: GIT e GitHub</span>
-            <br />
-            <span normal>Conclusão: 31 de maio de 2024</span>
-          </h4>
+        <div class="card-container">
+          <div class="card" id="HTML5card">
+            <img src="img/certificado_onebitcode_html5_page-0001.jpg" />
+            <h4>
+              <span negrito style="color: #000">Módulo: HTML5</span>
+              <br />
+              <span normal>Conclusão: 20 de setembro de 2023</span>
+            </h4>
+          </div>
+          <div class="card" id="CSS3card">
+            <img src="img/certificado_onebitcode_css3_page-0001.jpg" />
+            <h4>
+              <span negrito style="color: #000">Módulo: CSS3</span>
+              <br />
+              <span normal>Conclusão: 22 de outubro de 2023</span>
+            </h4>
+          </div>
+          <div class="card" id="CSSmodernoCard">
+            <img src="img/certificado_onebitcode_css-moderno_page-0001.jpg" />
+            <h4>
+              <span negrito style="color: #000">Módulo: CSS Moderno</span>
+              <br />
+              <span normal>Conclusão: 25 de fevereiro de 2023</span>
+            </h4>
+          </div>
+          <div class="card" id="JScard">
+            <img src="img/certificado_onebitcode_javascript.jpg" />
+            <h4>
+              <span negrito style="color: #000">Módulo: Javascript</span>
+              <br />
+              <span normal>Conclusão: 27 de setembro de 2023</span>
+            </h4>
+          </div>
+          <div class="card" id="TScard">
+            <img src="img/certificado_onebitcode_typescript_page-0001.jpg" />
+            <h4>
+              <span negrito style="color: #000">Módulo: Typescript</span>
+              <br />
+              <span normal>Conclusão: 19 de outubro de 2023</span>
+            </h4>
+          </div>
+          <div class="card" id="gitGithubCard">
+            <img src="img/certificado_onebitcode_gitgithub_page-0001.jpg" />
+            <h4>
+              <span negrito style="color: #000">Módulo: GIT e GitHub</span>
+              <br />
+              <span normal>Conclusão: 31 de maio de 2024</span>
+            </h4>
+          </div>
         </div>
       </section>
     </div>
-    <aside>
-      <a
-        target="_blank"
-        title="Meu LinkedIn"
-        href="https://www.linkedin.com/in/joaolucianosd/"
-        ><img id="linkedin" src="img/svg/linkedin-svgrepo-com.svg"
-      /></a>
-      <a
-        target="_blank"
-        title="Meu GitHub"
-        href="https://github.com/JoaoLuciano1429"
-        ><img id="github" src="img/svg/GitHub_Invertocat_Logo.svg"
-      /></a>
-      <a
-        target="_blank"
-        title="Meu Portfólio"
-        href="https://joaoluciano1429.github.io/meuportfolio.github.io/"
-      >
-        <img id="portfolio" src="img/pasta.png" />
-      </a>
-    </aside>
+
     <abbr title="Ir para o topo">
       <a href="#top"><button normal id="toTop">&uArr;</button></a></abbr
     >
+    <div class="certificates-modal">
+      <nav>
+        <h2 normal>Certificados de João Luciano Salim Drumond</h2>
+        <button id="closeCert" type="button">&times;</button>
+      </nav>
+      <main>
+        <section id="slider">
+          <div id="slides">
+            <figure id="CertFarroupilha" class="slide">
+              <img src="img/Certificado-Farroupilha.png" />
+              <h3 normal>
+                Certificado de Conclusão do Ensino Fundamental: Colégio
+                Farroupilha de Campinas
+              </h3>
+            </figure>
+            <figure id="CertLiceu" class="slide">
+              <img src="img/Certificado-Liceu.png" />
+              <h3 normal>
+                Certificado de Conclusão do Ensino Médio: Colégio Liceu
+                Salesiano Nossa Senhora Auxiliadora
+              </h3>
+            </figure>
+            <figure id="CertHTML5" class="slide">
+              <img src="img/certificado_onebitcode_html5_page-0001.jpg" />
+              <h3 normal>
+                Certificado de Conclusão do Módulo de HTML5: OneBitCode
+              </h3>
+            </figure>
+            <figure id="CertCSS3" class="slide">
+              <img src="img/certificado_onebitcode_css3_page-0001.jpg" />
+              <h3 normal>
+                Certificado de Conclusão do Módulo de CSS3: OneBitCode
+              </h3>
+            </figure>
+            <figure id="CertCSSmoderno" class="slide">
+              <img src="img/certificado_onebitcode_css-moderno_page-0001.jpg" />
+              <h3 normal>
+                Certificado de Conclusão do Módulo de CSS Moderno: OneBitCode
+              </h3>
+            </figure>
+            <figure id="CertJS" class="slide">
+              <img src="img/certificado_onebitcode_javascript.jpg" />
+              <h3 normal>
+                Certificado de Conclusão do Módulo de Javascript: OneBitCode
+              </h3>
+            </figure>
+            <figure id="CertTS" class="slide">
+              <img src="img/certificado_onebitcode_typescript_page-0001.jpg" />
+              <h3 normal>
+                Certificado de Conclusão do Módulo de Typescript: OneBitCode
+              </h3>
+            </figure>
+            <figure id="CertGGh" class="slide">
+              <img src="img/certificado_onebitcode_gitgithub_page-0001.jpg" />
+              <h3 normal>
+                Certificado de Conclusão do Módulo de GIT e GitHub: OneBitCode
+              </h3>
+            </figure>
+          </div>
+          <div id="slider__nav">
+            <a href="#CertFarroupilha" id="sli1" class="nav__link"></a>
+            <a href="#CertLiceu" id="sli2" class="nav__link"></a>
+            <a href="#CertHTML5" id="sli3" class="nav__link"></a>
+            <a href="#CertCSS3" id="sli4" class="nav__link"></a>
+            <a href="#CertCSSmoderno" id="sli5" class="nav__link"></a>
+            <a href="#CertJS" id="sli6" class="nav__link"></a>
+            <a href="#CertTS" id="sli7" class="nav__link"></a>
+            <a href="#CertGGh" id="sli8" class="nav__link"></a>
+          </div>
+        </section>
+      </main>
+    </div>
   </body>
-  <superbody>
-    <nav>
-      <h2 normal>Certificados de João Luciano Salim Drumond</h2>
-      <button id="closeCert" type="button">&times;</button>
-    </nav>
-    <main>
-      <section id="slider">
-        <div id="slides">
-          <figure id="CertFarroupilha" class="slide">
-            <img src="img/Certificado-Farroupilha.png" />
-            <h3 normal>
-              Certificado de Conclusão do Ensino Fundamental: Colégio
-              Farroupilha de Campinas
-            </h3>
-          </figure>
-          <figure id="CertLiceu" class="slide">
-            <img src="img/Certificado-Liceu.png" />
-            <h3 normal>
-              Certificado de Conclusão do Ensino Médio: Colégio Liceu Salesiano
-              Nossa Senhora Auxiliadora
-            </h3>
-          </figure>
-          <figure id="CertHTML5" class="slide">
-            <img src="img/certificado_onebitcode_html5_page-0001.jpg" />
-            <h3 normal>
-              Certificado de Conclusão do Módulo de HTML5: OneBitCode
-            </h3>
-          </figure>
-          <figure id="CertCSS3" class="slide">
-            <img src="img/certificado_onebitcode_css3_page-0001.jpg" />
-            <h3 normal>
-              Certificado de Conclusão do Módulo de CSS3: OneBitCode
-            </h3>
-          </figure>
-          <figure id="CertCSSmoderno" class="slide">
-            <img src="img/certificado_onebitcode_css-moderno_page-0001.jpg" />
-            <h3 normal>
-              Certificado de Conclusão do Módulo de CSS Moderno: OneBitCode
-            </h3>
-          </figure>
-          <figure id="CertJS" class="slide">
-            <img src="img/certificado_onebitcode_javascript.jpg" />
-            <h3 normal>
-              Certificado de Conclusão do Módulo de Javascript: OneBitCode
-            </h3>
-          </figure>
-          <figure id="CertTS" class="slide">
-            <img src="img/certificado_onebitcode_typescript_page-0001.jpg" />
-            <h3 normal>
-              Certificado de Conclusão do Módulo de Typescript: OneBitCode
-            </h3>
-          </figure>
-          <figure id="CertGGh" class="slide">
-            <img src="img/certificado_onebitcode_gitgithub_page-0001.jpg" />
-            <h3 normal>
-              Certificado de Conclusão do Módulo de GIT e GitHub: OneBitCode
-            </h3>
-          </figure>
-        </div>
-        <div id="slider__nav">
-          <a href="#CertFarroupilha" id="sli1" class="nav__link"></a>
-          <a href="#CertLiceu" id="sli2" class="nav__link"></a>
-          <a href="#CertHTML5" id="sli3" class="nav__link"></a>
-          <a href="#CertCSS3" id="sli4" class="nav__link"></a>
-          <a href="#CertCSSmoderno" id="sli5" class="nav__link"></a>
-          <a href="#CertJS" id="sli6" class="nav__link"></a>
-          <a href="#CertTS" id="sli7" class="nav__link"></a>
-          <a href="#CertGGh" id="sli8" class="nav__link"></a>
-        </div>
-      </section>
-    </main>
-  </superbody>
 </html>
