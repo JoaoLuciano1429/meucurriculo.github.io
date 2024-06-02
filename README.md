@@ -4,6 +4,9 @@ Meu currículo profissional como desenvolvedor em versão página de web.
 
 # Atualizações recentes:
 
+\\ 02/06/2024
+(·) Melhoria na aparência e responsividade geral
+
 \\ 31/05/2024
 (+) Adicionado Certificado de GIT e GitHub
 
