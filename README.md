@@ -4,11 +4,14 @@ Meu currículo profissional como desenvolvedor em versão página de web.
 
 # Atualizações recentes:
 
+\\ 05/06/2024:
+(+) Adicionado Certificado de Sass.
+
 \\ 02/06/2024
-(·) Melhoria na aparência e responsividade geral
+(·) Melhoria na aparência e responsividade geral.
 
 \\ 31/05/2024
-(+) Adicionado Certificado de GIT e GitHub
+(+) Adicionado Certificado de GIT e GitHub.
 
 \\ 20/05/2024
 (·) Melhoria na responsividade do card da Prefeitura, na seção de Experiência Profissional.
