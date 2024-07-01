@@ -4,6 +4,9 @@ Meu currículo profissional como desenvolvedor em versão página de web.
 
 # Atualizações recentes:
 
+\\ 01/07/2024:
+(+) Adicionado cursores personalizados que se alteram com base no dia.
+
 \\ 05/06/2024:
 (+) Adicionado Certificado de Sass.
 

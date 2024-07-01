@@ -1,0 +1,292 @@
+.cursor-christmas-default {
+  cursor: url("./cursors/Natal/seleção normal.cur"), auto !important;
+}
+.cursor-blue-dino-default {
+  cursor: url("./cursors/Dino2/3dsarro.cur"), auto;
+}
+.cursor-yellow-dino-default {
+  cursor: url("./cursors/Dino1/3dgarro.cur"), auto;
+}
+
+.cursor-christmas-pointer {
+  cursor: url("./cursors/Natal/seleção de link.cur"), pointer !important;
+}
+.cursor-blue-dino-pointer {
+  cursor: url("./cursors/Dino2/pointer/frame-1.gif"), pointer;
+  animation: dino2pointer 1s linear infinite;
+}
+.cursor-yellow-dino-pointer {
+  cursor: url("./cursors/Dino1/pointer/0.gif"), pointer;
+  animation: dino1pointer 1s linear infinite;
+}
+
+.cursor-christmas-text {
+  cursor: url("./cursors/Natal/seleção de texto.cur"), text;
+}
+
+.cursor-christmas-wait {
+  cursor: url("./cursors/Natal/wait/frame_0_delay-0.01s.gif"), wait !important;
+  animation: christmasWait 1s linear infinite !important;
+}
+.cursor-blue-dino-wait {
+  cursor: url("./cursors/Dino2/wait/frame-01.gif"), wait;
+  animation: dino2wait 1s linear infinite;
+}
+.cursor-yellow-dino-wait {
+  cursor: url("./cursors/Dino1/wait/frame-01.gif"), wait;
+  animation: dino1wait 1s linear infinite;
+}
+
+.cursor-christmas-progress {
+  cursor: url("./cursors/Natal/progress/frame_0_delay-0.01s.gif"), progress !important;
+  animation: christmasProgress 1s linear infinite !important;
+}
+.cursor-blue-dino-progress {
+  cursor: url("./cursors/Dino2/progress/frame_00_delay-0.01s.gif"), progress;
+  animation: dino2progress 1s linear infinite;
+}
+.cursor-yellow-dino-progress {
+  cursor: url("./cursors/Dino1/progress/frame-01.png"), progress;
+  animation: dino1progress 1s linear infinite;
+}
+
+.cursor-christmas-not-allowed {
+  cursor: url("./cursors/Natal/não disponível.cur"), not-allowed !important;
+}
+.cursor-blue-dino-not-allowed {
+  cursor: url("./cursors/Dino2/3dsno.cur"), not-allowed;
+}
+.cursor-yellow-dino-not-allowed {
+  cursor: url("./cursors/Dino1/3dgno.cur"), not-allowed;
+}
+
+@keyframes dino1pointer {
+  0% {
+    cursor: url("./cursors/Dino1/pointer/0.gif"), pointer;
+  }
+  20% {
+    cursor: url("./cursors/Dino1/pointer/1.gif"), pointer;
+  }
+  40% {
+    cursor: url("./cursors/Dino1/pointer/2.gif"), pointer;
+  }
+  60% {
+    cursor: url("./cursors/Dino1/pointer/3.gif"), pointer;
+  }
+  80% {
+    cursor: url("./cursors/Dino1/pointer/4.gif"), pointer;
+  }
+  100% {
+    cursor: url("./cursors/Dino1/pointer/5.gif"), pointer;
+  }
+}
+
+@keyframes dino1wait {
+  0% {
+    cursor: url("./cursors/Dino1/wait/frame-01.gif"), wait;
+  }
+  7% {
+    cursor: url("./cursors/Dino1/wait/frame-02.gif"), wait;
+  }
+  14% {
+    cursor: url("./cursors/Dino1/wait/frame-03.gif"), wait;
+  }
+  21% {
+    cursor: url("./cursors/Dino1/wait/frame-04.gif"), wait;
+  }
+  28% {
+    cursor: url("./cursors/Dino1/wait/frame-05.gif"), wait;
+  }
+  35% {
+    cursor: url("./cursors/Dino1/wait/frame-06.gif"), wait;
+  }
+  42% {
+    cursor: url("./cursors/Dino1/wait/frame-07.gif"), wait;
+  }
+  49% {
+    cursor: url("./cursors/Dino1/wait/frame-08.gif"), wait;
+  }
+  56% {
+    cursor: url("./cursors/Dino1/wait/frame-09.gif"), wait;
+  }
+  63% {
+    cursor: url("./cursors/Dino1/wait/frame-10.gif"), wait;
+  }
+  70% {
+    cursor: url("./cursors/Dino1/wait/frame-11.gif"), wait;
+  }
+  77% {
+    cursor: url("./cursors/Dino1/wait/frame-12.gif"), wait;
+  }
+  84% {
+    cursor: url("./cursors/Dino1/wait/frame-13.gif"), wait;
+  }
+  91% {
+    cursor: url("./cursors/Dino1/wait/frame-14.gif"), wait;
+  }
+  100% {
+    cursor: url("./cursors/Dino1/wait/frame-15.gif"), wait;
+  }
+}
+
+@keyframes dino1progress {
+  10% {
+    cursor: url("./cursors/Dino1/progress/frame-01.png"), progress;
+  }
+  20% {
+    cursor: url("./cursors/Dino1/progress/frame-02.png"), progress;
+  }
+  30% {
+    cursor: url("./cursors/Dino1/progress/frame-03.png"), progress;
+  }
+  40% {
+    cursor: url("./cursors/Dino1/progress/frame-04.png"), progress;
+  }
+  50% {
+    cursor: url("./cursors/Dino1/progress/frame-05.png"), progress;
+  }
+  60% {
+    cursor: url("./cursors/Dino1/progress/frame-06.png"), progress;
+  }
+  70% {
+    cursor: url("./cursors/Dino1/progress/frame-07.png"), progress;
+  }
+  80% {
+    cursor: url("./cursors/Dino1/progress/frame-08.png"), progress;
+  }
+  90% {
+    cursor: url("./cursors/Dino1/progress/frame-09.png"), progress;
+  }
+  100% {
+    cursor: url("./cursors/Dino1/progress/frame-10.png"), progress;
+  }
+}
+
+@keyframes dino2pointer {
+  0% {
+    cursor: url("./cursors/Dino2/pointer/frame-1.gif"), pointer;
+  }
+  20% {
+    cursor: url("./cursors/Dino2/pointer/frame-2.gif"), pointer;
+  }
+  40% {
+    cursor: url("./cursors/Dino2/pointer/frame-3.gif"), pointer;
+  }
+  60% {
+    cursor: url("./cursors/Dino2/pointer/frame-4.gif"), pointer;
+  }
+  80% {
+    cursor: url("./cursors/Dino2/pointer/frame-5.gif"), pointer;
+  }
+  100% {
+    cursor: url("./cursors/Dino2/pointer/frame-6.gif"), pointer;
+  }
+}
+
+@keyframes dino2wait {
+  0% {
+    cursor: url("./cursors/Dino2/wait/frame-01.gif"), wait;
+  }
+  7% {
+    cursor: url("./cursors/Dino2/wait/frame-02.gif"), wait;
+  }
+  14% {
+    cursor: url("./cursors/Dino2/wait/frame-03.gif"), wait;
+  }
+  21% {
+    cursor: url("./cursors/Dino2/wait/frame-04.gif"), wait;
+  }
+  28% {
+    cursor: url("./cursors/Dino2/wait/frame-05.gif"), wait;
+  }
+  35% {
+    cursor: url("./cursors/Dino2/wait/frame-06.gif"), wait;
+  }
+  42% {
+    cursor: url("./cursors/Dino2/wait/frame-07.gif"), wait;
+  }
+  49% {
+    cursor: url("./cursors/Dino2/wait/frame-08.gif"), wait;
+  }
+  56% {
+    cursor: url("./cursors/Dino2/wait/frame-09.gif"), wait;
+  }
+  63% {
+    cursor: url("./cursors/Dino2/wait/frame-10.gif"), wait;
+  }
+  70% {
+    cursor: url("./cursors/Dino2/wait/frame-11.gif"), wait;
+  }
+  77% {
+    cursor: url("./cursors/Dino2/wait/frame-12.gif"), wait;
+  }
+  84% {
+    cursor: url("./cursors/Dino2/wait/frame-13.gif"), wait;
+  }
+  91% {
+    cursor: url("./cursors/Dino2/wait/frame-14.gif"), wait;
+  }
+  100% {
+    cursor: url("./cursors/Dino2/wait/frame-15.gif"), wait;
+  }
+}
+
+@keyframes dino2progress {
+  10% {
+    cursor: url("./cursors/Dino2/progress/frame_00_delay-0.01s.gif"), progress;
+  }
+  20% {
+    cursor: url("./cursors/Dino2/progress/frame_01_delay-0.01s.gif"), progress;
+  }
+  30% {
+    cursor: url("./cursors/Dino2/progress/frame_02_delay-0.01s.gif"), progress;
+  }
+  40% {
+    cursor: url("./cursors/Dino2/progress/frame_03_delay-0.01s.gif"), progress;
+  }
+  50% {
+    cursor: url("./cursors/Dino2/progress/frame_04_delay-0.01s.gif"), progress;
+  }
+  60% {
+    cursor: url("./cursors/Dino2/progress/frame_05_delay-0.01s.gif"), progress;
+  }
+  70% {
+    cursor: url("./cursors/Dino2/progress/frame_06_delay-0.01s.gif"), progress;
+  }
+  80% {
+    cursor: url("./cursors/Dino2/progress/frame_07_delay-0.01s.gif"), progress;
+  }
+  90% {
+    cursor: url("./cursors/Dino2/progress/frame_08_delay-0.01s.gif"), progress;
+  }
+  100% {
+    cursor: url("./cursors/Dino2/progress/frame_09_delay-0.01s.gif"), progress;
+  }
+}
+
+@keyframes christmasWait {
+  0% {
+    cursor: url("./cursors/Natal/wait/frame_0_delay-0.01s.gif"), wait;
+  }
+  50% {
+    cursor: url("./cursors/Natal/wait/frame_1_delay-0.01s.gif"), wait;
+  }
+  100% {
+    cursor: url("./cursors/Natal/wait/frame_2_delay-0.01s.gif"), wait;
+  }
+}
+
+@keyframes christmasProgress {
+  0% {
+    cursor: url("./cursors/Natal/progress/frame_0_delay-0.01s.gif"), progress;
+  }
+  33% {
+    cursor: url("./cursors/Natal/progress/frame_1_delay-0.01s.gif"), progress;
+  }
+  67% {
+    cursor: url("./cursors/Natal/progress/frame_2_delay-0.01s.gif"), progress;
+  }
+  100% {
+    cursor: url("./cursors/Natal/progress/frame_3_delay-0.01s.gif"), progress;
+  }
+}

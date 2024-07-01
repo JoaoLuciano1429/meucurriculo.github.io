@@ -22,64 +22,72 @@
       href="./img/icon/favicon-32x32.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/font.css" type="text/css" />
     <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+    <link rel="stylesheet" href="css/cursor.css" type="text/css" />
     <script src="js/script.js" defer></script>
   </head>
   <body>
     <div class="container">
       <section id="dadosPessoais">
-        <h1 negrito class="title">Dados Pessoais</h1>
+        <h1 negrito class="title text">Dados Pessoais</h1>
         <div class="breakLine"></div>
         <figure class="photo">
           <img src="img/jlsd.jpg" alt="Foto de João Luciano Salim Drumond" />
         </figure>
-        <h2 class="name">
+        <h2 class="name text">
           <span negrito style="color: #000">Nome completo: </span>
           <span normal>João Luciano Salim Drumond</span>
         </h2>
-        <h2 class="genre">
+        <h2 class="genre text">
           <span negrito style="color: #000">Sexo: </span>
           <span normal>Masculino</span>
         </h2>
-        <h2 class="age">
+        <h2 class="age text">
           <span negrito style="color: #000">Idade: </span>
           <span normal id="ageDisplay"></span>
         </h2>
-        <h2 class="birthday">
+        <h2 class="birthday text">
           <span negrito style="color: #000">Data de nascimento: </span>
           <span normal>06/09/2003</span>
         </h2>
         <h2 class="phone">
-          <span negrito style="color: #000">Celular: </span>
+          <span class="text" negrito style="color: #000">Celular: </span>
           <span normal
-            ><a href="tel:+5519986066930">+55 (19) 98606-6930</a></span
+            ><a class="pointer" href="tel:+5519986066930"
+              >+55 (19) 98606-6930</a
+            ></span
           >
         </h2>
         <h2 class="email">
-          <span negrito style="color: #000">E-mail: </span>
+          <span class="text" negrito style="color: #000">E-mail: </span>
           <span normal
-            ><a href="mailto:lucianoangeys@gmail.com"
+            ><a class="pointer" href="mailto:lucianoangeys@gmail.com"
               >lucianoangeys@gmail.com</a
             ></span
           >
         </h2>
-        <button id="viewCert" type="button">Ver certificados</button>
+        <button class="pointer" id="viewCert" type="button">
+          Ver certificados
+        </button>
         <aside>
           <a
+            class="pointer"
             target="_blank"
             title="Meu LinkedIn"
             href="https://www.linkedin.com/in/joaolucianosd/"
             ><img id="linkedin" src="img/svg/linkedin-svgrepo-com.svg"
           /></a>
           <a
+            class="pointer"
             target="_blank"
             title="Meu GitHub"
             href="https://github.com/JoaoLuciano1429"
             ><img id="github" src="img/svg/GitHub_Invertocat_Logo.svg"
           /></a>
           <a
+            class="pointer"
             target="_blank"
             title="Meu Portfólio"
             href="https://joaoluciano1429.github.io/meuportfolio.github.io/"
@@ -90,9 +98,9 @@
       </section>
       <hr />
       <section id="objetivosProfissionais">
-        <h1 negrito class="title2">Objetivos Profissionais</h1>
+        <h1 negrito class="title2 text">Objetivos Profissionais</h1>
         <div class="breakLine2"></div>
-        <p normal class="text-content">
+        <p normal class="text-content text">
           Desejo atuar na construção de websites, trabalhando como desenvolvedor
           front-end, aplicando as tecnologias HTML e CSS, JavaScript,
           TypeScript, e Sass, que eu aprendo com o curso do OneBitCode:
@@ -101,14 +109,14 @@
       </section>
       <hr />
       <section id="formacaoAcademica">
-        <h1 negrito class="title3">Formação Acadêmica</h1>
+        <h1 negrito class="title3 text">Formação Acadêmica</h1>
         <div class="card-container">
           <div class="card" id="cardFarroupilha">
             <img
               src="img/Certificado-Farroupilha.png"
               alt="Certificado Farroupilha"
             />
-            <h4>
+            <h4 class="text">
               <span negrito style="color: #000"
                 >Colégio Farroupilha de Campinas</span
               >
@@ -120,7 +128,7 @@
           </div>
           <div class="card" id="cardLiceu">
             <img src="img/Certificado-Liceu.png" alt="Certificado Liceu" />
-            <h4>
+            <h4 class="text">
               <span negrito style="color: #000"
                 >Colégio Liceu Salesiano Nossa Senhora Auxiliadora</span
               ><br />
@@ -131,7 +139,7 @@
           </div>
           <div class="card" id="cardUNISAL">
             <main><div class="loader"></div></main>
-            <h4>
+            <h4 class="text">
               <span negrito style="color: #000"
                 >UNISAL - Centro Universitário Salesiano de São Paulo</span
               ><br />
@@ -148,7 +156,7 @@
         <div class="card-container">
           <div class="card" id="cardIBGE">
             <img src="img/ibge.png" alt="IBGE-logo" />
-            <h4>
+            <h4 class="text">
               <span negrito style="color: #000">Recenseador • Temporário</span>
               <br />
               <span normal>De agosto de 2022 até novembro de 2022</span>
@@ -159,7 +167,7 @@
               src="img/prefeituraCampinas.png"
               alt="PrefeituraCampinas-logo"
             />
-            <h4>
+            <h4 class="text">
               <span negrito style="color: #000">Estagiário</span>
               <br />
               <span normal>De dezembro de 2023 até o momento</span>
@@ -169,8 +177,8 @@
       </section>
       <hr />
       <section id="cursosExtracurriculares">
-        <h1 negrito class="title5">Cursos Extracurriculares</h1>
-        <h2 negrito class="subTitle">
+        <h1 negrito class="title5 text">Cursos Extracurriculares</h1>
+        <h2 negrito class="subTitle text">
           <img
             src="img/OneBitCode.jpg"
             alt="OneBitCode-logo"
@@ -179,11 +187,11 @@
           OneBitCode - Curso Online Programador Full Stack JavaScript
           Profissional
         </h2>
-        <h3 negrito style="color: #000" class="t1">Certificados:</h3>
+        <h3 negrito style="color: #000" class="t1 text">Certificados:</h3>
         <div class="card-container">
           <div class="card" id="HTML5card">
             <img src="img/certificado_onebitcode_html5_page-0001.jpg" />
-            <h4>
+            <h4 class="text">
               <span negrito style="color: #000">Módulo: HTML5</span>
               <br />
               <span normal>Conclusão: 20 de setembro de 2023</span>
@@ -191,7 +199,7 @@
           </div>
           <div class="card" id="CSS3card">
             <img src="img/certificado_onebitcode_css3_page-0001.jpg" />
-            <h4>
+            <h4 class="text">
               <span negrito style="color: #000">Módulo: CSS3</span>
               <br />
               <span normal>Conclusão: 22 de outubro de 2023</span>
@@ -199,7 +207,7 @@
           </div>
           <div class="card" id="CSSmodernoCard">
             <img src="img/certificado_onebitcode_css-moderno_page-0001.jpg" />
-            <h4>
+            <h4 class="text">
               <span negrito style="color: #000">Módulo: CSS Moderno</span>
               <br />
               <span normal>Conclusão: 25 de fevereiro de 2023</span>
@@ -207,7 +215,7 @@
           </div>
           <div class="card" id="JScard">
             <img src="img/certificado_onebitcode_javascript.jpg" />
-            <h4>
+            <h4 class="text">
               <span negrito style="color: #000">Módulo: Javascript</span>
               <br />
               <span normal>Conclusão: 27 de setembro de 2023</span>
@@ -215,7 +223,7 @@
           </div>
           <div class="card" id="TScard">
             <img src="img/certificado_onebitcode_typescript_page-0001.jpg" />
-            <h4>
+            <h4 class="text">
               <span negrito style="color: #000">Módulo: Typescript</span>
               <br />
               <span normal>Conclusão: 19 de outubro de 2023</span>
@@ -223,7 +231,7 @@
           </div>
           <div class="card" id="gitGithubCard">
             <img src="img/certificado_onebitcode_gitgithub_page-0001.jpg" />
-            <h4>
+            <h4 class="text">
               <span negrito style="color: #000">Módulo: GIT e GitHub</span>
               <br />
               <span normal>Conclusão: 31 de maio de 2024</span>
@@ -231,7 +239,7 @@
           </div>
           <div class="card" id="sassCard">
             <img src="img/certificado_onebitcode_sass_pages-to-jpg-0001.jpg" />
-            <h4>
+            <h4 class="text">
               <span negrito style="color: #000">Módulo: Sass</span>
               <br />
               <span normal>Conclusão: 5 de junho de 2024</span>
@@ -241,64 +249,66 @@
       </section>
     </div>
 
-    <abbr title="Ir para o topo">
-      <a href="#top"><button normal id="toTop">&uArr;</button></a></abbr
+    <abbr class="pointer" title="Ir para o topo">
+      <a class="pointer" href="#top"
+        ><button class="pointer" normal id="toTop">&uArr;</button></a
+      ></abbr
     >
     <div class="certificates-modal">
       <nav>
-        <h2 normal>Certificados de João Luciano Salim Drumond</h2>
-        <button id="closeCert" type="button">&times;</button>
+        <h2 normal class="text">Certificados de João Luciano Salim Drumond</h2>
+        <button class="pointer" id="closeCert" type="button">&times;</button>
       </nav>
       <main>
         <section id="slider">
           <div id="slides">
             <figure id="CertFarroupilha" class="slide">
               <img src="img/Certificado-Farroupilha.png" />
-              <h3 normal>
+              <h3 normal class="text">
                 Certificado de Conclusão do Ensino Fundamental: Colégio
                 Farroupilha de Campinas
               </h3>
             </figure>
             <figure id="CertLiceu" class="slide">
               <img src="img/Certificado-Liceu.png" />
-              <h3 normal>
+              <h3 normal class="text">
                 Certificado de Conclusão do Ensino Médio: Colégio Liceu
                 Salesiano Nossa Senhora Auxiliadora
               </h3>
             </figure>
             <figure id="CertHTML5" class="slide">
               <img src="img/certificado_onebitcode_html5_page-0001.jpg" />
-              <h3 normal>
+              <h3 normal class="text">
                 Certificado de Conclusão do Módulo de HTML5: OneBitCode
               </h3>
             </figure>
             <figure id="CertCSS3" class="slide">
               <img src="img/certificado_onebitcode_css3_page-0001.jpg" />
-              <h3 normal>
+              <h3 normal class="text">
                 Certificado de Conclusão do Módulo de CSS3: OneBitCode
               </h3>
             </figure>
             <figure id="CertCSSmoderno" class="slide">
               <img src="img/certificado_onebitcode_css-moderno_page-0001.jpg" />
-              <h3 normal>
+              <h3 normal class="text">
                 Certificado de Conclusão do Módulo de CSS Moderno: OneBitCode
               </h3>
             </figure>
             <figure id="CertJS" class="slide">
               <img src="img/certificado_onebitcode_javascript.jpg" />
-              <h3 normal>
+              <h3 normal class="text">
                 Certificado de Conclusão do Módulo de Javascript: OneBitCode
               </h3>
             </figure>
             <figure id="CertTS" class="slide">
               <img src="img/certificado_onebitcode_typescript_page-0001.jpg" />
-              <h3 normal>
+              <h3 normal class="text">
                 Certificado de Conclusão do Módulo de Typescript: OneBitCode
               </h3>
             </figure>
             <figure id="CertGGh" class="slide">
               <img src="img/certificado_onebitcode_gitgithub_page-0001.jpg" />
-              <h3 normal>
+              <h3 normal class="text">
                 Certificado de Conclusão do Módulo de GIT e GitHub: OneBitCode
               </h3>
             </figure>
@@ -306,21 +316,21 @@
               <img
                 src="img/certificado_onebitcode_sass_pages-to-jpg-0001.jpg"
               />
-              <h3 normal>
+              <h3 normal class="text">
                 Certificado de Conclusão do Módulo de Sass: OneBitCode
               </h3>
             </figure>
           </div>
           <div id="slider__nav">
-            <a href="#CertFarroupilha" id="sli1" class="nav__link"></a>
-            <a href="#CertLiceu" id="sli2" class="nav__link"></a>
-            <a href="#CertHTML5" id="sli3" class="nav__link"></a>
-            <a href="#CertCSS3" id="sli4" class="nav__link"></a>
-            <a href="#CertCSSmoderno" id="sli5" class="nav__link"></a>
-            <a href="#CertJS" id="sli6" class="nav__link"></a>
-            <a href="#CertTS" id="sli7" class="nav__link"></a>
-            <a href="#CertGGh" id="sli8" class="nav__link"></a>
-            <a href="#CertSass" id="sli9" class="nav__link"></a>
+            <a href="#CertFarroupilha" id="sli1" class="nav__link pointer"></a>
+            <a href="#CertLiceu" id="sli2" class="nav__link pointer"></a>
+            <a href="#CertHTML5" id="sli3" class="nav__link pointer"></a>
+            <a href="#CertCSS3" id="sli4" class="nav__link pointer"></a>
+            <a href="#CertCSSmoderno" id="sli5" class="nav__link pointer"></a>
+            <a href="#CertJS" id="sli6" class="nav__link pointer"></a>
+            <a href="#CertTS" id="sli7" class="nav__link pointer"></a>
+            <a href="#CertGGh" id="sli8" class="nav__link pointer"></a>
+            <a href="#CertSass" id="sli9" class="nav__link pointer"></a>
           </div>
         </section>
       </main>
