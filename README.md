@@ -4,6 +4,9 @@ Meu currículo profissional como desenvolvedor em versão página de web.
 
 # Atualizações recentes:
 
+\\ 11/09/2024:
+(+) Adicionado Certificado de BootStrap.
+
 \\ 01/07/2024:
 (+) Adicionado cursores personalizados que se alteram com base no dia.
 
