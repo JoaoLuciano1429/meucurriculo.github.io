@@ -4,6 +4,9 @@ Meu currículo profissional como desenvolvedor em versão página de web.
 
 # Atualizações recentes:
 
+\\ 27/09/2024:
+(+) Adicionado Certificado de React.
+
 \\ 13/09/2024:
 (+) Mais informações.
 
