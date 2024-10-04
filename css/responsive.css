@@ -158,3 +158,10 @@
     font-size: 16px;
   }
 }
+
+/* Correção do elemento hr em telas maiores */
+@media only screen and (min-width: 1620px) {
+  hr {
+    width: auto;
+  }
+}
