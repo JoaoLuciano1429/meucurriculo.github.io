@@ -19,19 +19,23 @@
 }
 
 [normal] {
-  font-family: Futura-Std-Book;
+  font-family: Futura-Std-Book, sans-serif;
 }
 
 [negrito] {
-  font-family: Futura-Std-Heavy;
+  font-family: Futura-Std-Heavy, sans-serif;
+  font-weight: bold;
 }
 
 [obliquo] {
-  font-family: Futura-Std-Book-Oblique;
+  font-family: Futura-Std-Book-Oblique, sans-serif;
+  font-style: italic;
 }
 
 [bolditalic] {
-  font-family: Futura-Std-Bold-Oblique;
+  font-family: Futura-Std-Bold-Oblique, sans-serif;
+  font-weight: bold;
+  font-style: italic;
 }
 
 #viewCert {

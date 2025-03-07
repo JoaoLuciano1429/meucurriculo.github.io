@@ -245,6 +245,8 @@ section#objetivosProfissionais {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  width: 21rem;
+  height: 27rem;
 }
 
 .card img {
@@ -259,11 +261,6 @@ section#objetivosProfissionais {
   color: #333;
   background: #f5f5f5;
   width: 100%;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 #cardUNISAL {
@@ -547,4 +544,53 @@ button#toTop.show {
 
 .showCert {
   visibility: visible;
+}
+
+#experienciaProfissional > .card-container {
+  width: 100%;
+  height: 28rem;
+}
+
+#experienciaProfissional > .card-container .card {
+  position: relative;
+  perspective: 1000px;
+}
+
+.front,
+.back {
+  position: absolute;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: all 1s ease;
+}
+
+.front {
+  transform: rotateY(0deg);
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+#experienciaProfissional > .card-container .card:hover .front {
+  transform: rotateY(-180deg);
+}
+
+#experienciaProfissional > .card-container .card:hover .back {
+  transform: rotateY(0deg);
+}
+
+.content {
+  padding-left: 15px;
+  padding-top: 10px;
+  gap: 10px;
+}
+
+#habilidadesTecnicas,
+#projetos,
+#idiomas {
+  gap: 10px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
