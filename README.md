@@ -2,7 +2,13 @@
 
 Meu currículo profissional como desenvolvedor em versão página de web.
 
-# Atualizações recentes:
+## Atualizações recentes
+
+\\ 07/03/2025:
+(·) Reformulação no design
+(+) Adicionado projetos
+(+) Adicionado idiomas
+(-) Removida as imagens dos certificados da página principal
 
 \\ 01/12/2024:
 (·) Atualização na seção 'Experiência Profissional'.
