@@ -7,6 +7,9 @@
 .cursor-yellow-dino-default {
   cursor: url("./cursors/Dino1/3dgarro.cur"), auto;
 }
+.cursor-sonic-default {
+  cursor: url("./cursors/Sonic/Seleção Normal.cur"), auto !important;
+}
 
 .cursor-christmas-pointer {
   cursor: url("./cursors/Natal/seleção de link.cur"), pointer !important;
@@ -18,6 +21,9 @@
 .cursor-yellow-dino-pointer {
   cursor: url("./cursors/Dino1/pointer/0.gif"), pointer;
   animation: dino1pointer 1s linear infinite;
+}
+.cursor-sonic-pointer {
+  cursor: url("./cursors/Sonic/Seleção de Link.cur"), pointer !important;
 }
 
 .cursor-christmas-text {

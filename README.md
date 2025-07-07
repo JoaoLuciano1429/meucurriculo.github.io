@@ -4,6 +4,12 @@ Meu currículo profissional como desenvolvedor em versão página de web.
 
 ## Atualizações recentes
 
+\\ 07/07/2025:
+(·) Atualização dos certificados de HTML e CSS
+(+) Adicionado novo tema de cursor de evento
+(+) Adicionado notificador de eventos específicos
+(+) Adicionado mais metadados
+
 \\ 07/03/2025:
 (·) Reformulação no design
 (+) Adicionado projetos

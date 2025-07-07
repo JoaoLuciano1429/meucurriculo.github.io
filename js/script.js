@@ -74,6 +74,11 @@ function setCursorBasedOnDay() {
     body.classList.add("cursor-christmas-default");
   }
 
+  // Verifica se é 23 de junho (Aniversário do Sonic)
+  if (day === 23 && month === 6) {
+    body.classList.add("cursor-sonic-default");
+  }
+
   // Exemplo de como mudar cursores específicos ao interagir com elementos
   const pointerElements = document.querySelectorAll(".pointer");
   pointerElements.forEach((element) => {
@@ -84,6 +89,9 @@ function setCursorBasedOnDay() {
     }
     if (day === 25 && month === 12) {
       element.classList.add("cursor-christmas-pointer");
+    }
+    if (day === 23 && month === 6) {
+      element.classList.add("cursor-sonic-pointer");
     }
   });
 
@@ -129,5 +137,28 @@ function setCursorBasedOnDay() {
     textElement.classList.add("cursor-christmas-text");
 }
 
+const eventDayNotifier = () => {
+  const date = new Date();
+  const day = date.getDate();
+  const month = date.getMonth() + 1; // Janeiro é 0
+
+  // Calcula o Dia do Programador (256º dia do ano)
+  const year = date.getFullYear();
+  const programmerDay = new Date(year, 0, 256); // Janeiro = 0
+  const programmerDayDate = programmerDay.getDate();
+  const programmerDayMonth = programmerDay.getMonth() + 1;
+
+  if (day === 23 && month === 6) {
+    alert("Hoje é o aniversário do Sonic! 🎉");
+  }
+  if (day === 25 && month === 12) {
+    alert("Hoje é Natal! 🎄");
+  }
+  if (day === programmerDayDate && month === programmerDayMonth) {
+    alert("Hoje é o Dia do Programador! 👨‍💻🎉");
+  }
+};
+
 // Chama a função ao carregar a página
 document.addEventListener("DOMContentLoaded", setCursorBasedOnDay);
+document.addEventListener("DOMContentLoaded", eventDayNotifier);
