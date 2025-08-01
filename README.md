@@ -4,6 +4,10 @@ Meu currículo profissional como desenvolvedor em versão página de web.
 
 ## Atualizações recentes
 
+\\ 01/08/2025:
+(+) Adição do arquivo CSS para impressão do currículo em design apropriado
+(+) Adicionado novo cargo atual, começando no dia 4
+
 \\ 07/07/2025:
 (·) Atualização dos certificados de HTML e CSS
 (+) Adicionado novo tema de cursor de evento
