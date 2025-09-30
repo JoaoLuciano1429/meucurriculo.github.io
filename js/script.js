@@ -162,3 +162,46 @@ const eventDayNotifier = () => {
 // Chama a função ao carregar a página
 document.addEventListener("DOMContentLoaded", setCursorBasedOnDay);
 document.addEventListener("DOMContentLoaded", eventDayNotifier);
+
+const tel = document.getElementById("tel");
+const mail = document.getElementById("mail");
+
+tel.addEventListener("click", () => {
+  window.open(`tel:${atob(tel.dataset.tel)}`, "_blank");
+});
+
+mail.addEventListener("click", () => {
+  window.open(`mailto:${atob(mail.dataset.mail)}`, "_blank");
+});
+
+// Função para exibir telefone e email durante a impressão
+const showContactOnPrint = () => {
+  const telElement = document.getElementById("tel");
+  const mailElement = document.getElementById("mail");
+
+  // Decodifica os valores em Base64
+  const decodedTel = atob(telElement.dataset.tel);
+  const decodedMail = atob(mailElement.dataset.mail);
+
+  // Cria elementos temporários para exibição
+  const telPrint = document.createElement("span");
+  telPrint.id = "telPrint";
+  telPrint.textContent = `${decodedTel}`;
+
+  const mailPrint = document.createElement("span");
+  mailPrint.id = "mailPrint";
+  mailPrint.textContent = `${decodedMail}`;
+
+  // Adiciona os elementos ao DOM
+  telElement.parentElement.appendChild(telPrint);
+  mailElement.parentElement.appendChild(mailPrint);
+
+  // Remove os elementos após a impressão
+  window.onafterprint = () => {
+    telPrint.remove();
+    mailPrint.remove();
+  };
+};
+
+// Adiciona o evento para antes da impressão
+window.onbeforeprint = showContactOnPrint;

@@ -166,20 +166,22 @@ button {
   grid-area: phone;
 }
 
-a {
+a,
+.link {
   color: #005500;
   text-decoration: none;
+  cursor: pointer;
 }
 
-a:hover {
+:is(a, .link):hover {
   text-decoration: underline;
 }
 
-a:active {
+:is(a, .link):active {
   color: #002800;
 }
 
-a:visited {
+:is(a, .link):visited {
   color: #f00;
 }
 
