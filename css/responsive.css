@@ -160,7 +160,7 @@
 }
 
 /* Correção do elemento hr em telas maiores */
-@media only screen and (min-width: 1620px) {
+@media only screen and (min-width: 2560px) {
   hr {
     width: auto;
   }

@@ -1,0 +1,17 @@
+{
+  "name": "Currículo de João Luciano",
+  "short_name": "Meu Currículo",
+  "description": "Currículo profissional como Desenvolvedor de Front-End",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "fullscreen",
+  "background_color": "#ffffff",
+  "theme_color": "#F5DEB3",
+  "icons": [
+    {
+      "src": "./img/icon/favicon-32x32.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ]
+}

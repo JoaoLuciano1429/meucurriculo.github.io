@@ -242,7 +242,9 @@ section#objetivosProfissionais {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   margin-bottom: 20px;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -481,67 +483,6 @@ button#toTop.show {
   z-index: 1;
   background: none;
   pointer-events: none;
-}
-
-.certificates-modal #slider__nav {
-  display: inline;
-  box-sizing: border-box;
-  width: auto;
-  height: 85px;
-  text-align: center;
-}
-.certificates-modal .nav__link {
-  display: inline-block;
-  height: 55px;
-  width: 55px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin: 0 10px 0 10px;
-}
-
-#sli1 {
-  background-image: url("../img/Certificado-Farroupilha.png");
-}
-
-#sli2 {
-  background-image: url("../img/Certificado-Liceu.png");
-}
-
-#sli3 {
-  background-image: url("../img/HTML_page-0001.jpg");
-}
-
-#sli4 {
-  background-image: url("../img/CSS_page-0001.jpg");
-}
-
-#sli5 {
-  background-image: url("../img/certificado_onebitcode_css-moderno_page-0001.jpg");
-}
-
-#sli6 {
-  background-image: url("../img/certificado_onebitcode_javascript.jpg");
-}
-
-#sli7 {
-  background-image: url("../img/certificado_onebitcode_typescript_page-0001.jpg");
-}
-
-#sli8 {
-  background-image: url("../img/certificado_onebitcode_gitgithub_page-0001.jpg");
-}
-
-#sli9 {
-  background-image: url("../img/certificado_onebitcode_sass_pages-to-jpg-0001.jpg");
-}
-
-#sli10 {
-  background-image: url("../img/certificado_onebitcode_bootstrap_page-0001.jpg");
-}
-
-#sli11 {
-  background-image: url("../img/certificado_onebitcode_react_page-0001.jpg");
 }
 
 .showCert {

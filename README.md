@@ -4,6 +4,12 @@ Meu currículo profissional como desenvolvedor em versão página de web.
 
 ## Atualizações recentes
 
+\\ 23/02/2026:
+(·) Ajustes recomendados, e melhor navegação pelos slides de Certificados
+(·) Logo do OneBitCode atualizado
+(+) Novos metadados
+(+) Criação do manifest.json
+
 \\ 30/09/2025:
 (·) Alteração no modo de exibição do telefone e email por razões de segurança
 

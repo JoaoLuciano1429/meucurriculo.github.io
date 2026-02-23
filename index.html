@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br" id="top">
   <head>
     <meta charset="UTF-8" />
@@ -30,6 +30,24 @@
       content="Meu currículo profissional como desenvolvedor em versão página de web."
     />
     <meta name="author" content="JoãoLuciano1429" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Currículo de João Luciano" />
+    <meta
+      name="twitter:description"
+      content="Currículo profissional como Desenvolvedor de Front-End."
+    />
+    <meta
+      name="twitter:image"
+      content="https://cdn-icons-png.flaticon.com/512/6747/6747196.png"
+    />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="apple-touch-icon" href="img/icon/favicon-32x32.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
     <title>Currículo de João Luciano Salim Drumond</title>
     <link
       rel="shortcut icon"
@@ -100,22 +118,31 @@
             target="_blank"
             title="Meu LinkedIn"
             href="https://www.linkedin.com/in/joaolucianosd/"
-            ><img id="linkedin" src="img/svg/linkedin-svgrepo-com.svg"
+            rel="noopener"
+            ><img
+              id="linkedin"
+              src="img/svg/linkedin-svgrepo-com.svg"
+              alt="LinkedIn"
           /></a>
           <a
             class="pointer"
             target="_blank"
             title="Meu GitHub"
             href="https://github.com/JoaoLuciano1429"
-            ><img id="github" src="img/svg/GitHub_Invertocat_Logo.svg"
+            rel="noopener"
+            ><img
+              id="github"
+              src="img/svg/GitHub_Invertocat_Logo.svg"
+              alt="GitHub"
           /></a>
           <a
             class="pointer"
             target="_blank"
             title="Meu Portfólio"
             href="https://joaoluciano1429.github.io/meuportfolio.github.io/"
+            rel="noopener"
           >
-            <img id="portfolio" src="img/pasta.png" />
+            <img id="portfolio" src="img/pasta.png" alt="Portfólio" />
           </a>
         </aside>
       </section>
@@ -294,6 +321,7 @@
               normal
               target="_blank"
               href="https://joaoluciano1429.github.io/meuportfolio.github.io/"
+              rel="noopener"
             >
               &Rightarrow; Portfólio online com HTML, CSS e JavaScript
             </a>
@@ -305,6 +333,7 @@
                 class="pointer"
                 target="_blank"
                 href="https://joaoluciano1429.github.io/meuportfolio.github.io/#projetos"
+                rel="noopener"
                 >&Rightarrow; Aqui! &Leftarrow;</a
               >
             </h4>
@@ -316,7 +345,7 @@
         <h1 negrito class="title5 text">Certificações e Cursos</h1>
         <h2 negrito class="subTitle text">
           <img
-            src="img/OneBitCode.jpg"
+            src="img/OneBitCode.jfif"
             alt="OneBitCode-logo"
             class="img-icon"
           />
@@ -367,7 +396,9 @@
 
     <abbr class="pointer" title="Ir para o topo">
       <a class="pointer" href="#top"
-        ><button class="pointer" normal id="toTop">&uArr;</button></a
+        ><button type="button" class="pointer" normal id="toTop">
+          &uArr;
+        </button></a
       ></abbr
     >
     <div class="certificates-modal">
@@ -379,51 +410,66 @@
         <section id="slider">
           <div id="slides">
             <figure id="CertFarroupilha" class="slide">
-              <img src="img/Certificado-Farroupilha.png" />
+              <img
+                src="img/Certificado-Farroupilha.png"
+                alt="Certificado-Farroupilha"
+              />
               <h3 normal class="text">
                 Certificado de Conclusão do Ensino Fundamental: Colégio
                 Farroupilha de Campinas
               </h3>
             </figure>
             <figure id="CertLiceu" class="slide">
-              <img src="img/Certificado-Liceu.png" />
+              <img src="img/Certificado-Liceu.png" alt="Certificado-Liceu" />
               <h3 normal class="text">
                 Certificado de Conclusão do Ensino Médio: Colégio Liceu
                 Salesiano Nossa Senhora Auxiliadora
               </h3>
             </figure>
             <figure id="CertHTML5" class="slide">
-              <img src="img/HTML_page-0001.jpg" />
+              <img src="img/HTML_page-0001.jpg" alt="CertificadoHTML" />
               <h3 normal class="text">
                 Certificado de Conclusão do Módulo de HTML5: OneBitCode
               </h3>
             </figure>
             <figure id="CertCSS3" class="slide">
-              <img src="img/CSS_page-0001.jpg" />
+              <img src="img/CSS_page-0001.jpg" alt="CertificadoCSS" />
               <h3 normal class="text">
                 Certificado de Conclusão do Módulo de CSS3: OneBitCode
               </h3>
             </figure>
             <figure id="CertCSSmoderno" class="slide">
-              <img src="img/certificado_onebitcode_css-moderno_page-0001.jpg" />
+              <img
+                src="img/certificado_onebitcode_css-moderno_page-0001.jpg"
+                alt="CertificadoCSSmoderno"
+              />
               <h3 normal class="text">
                 Certificado de Conclusão do Módulo de CSS Moderno: OneBitCode
               </h3>
             </figure>
             <figure id="CertJS" class="slide">
-              <img src="img/certificado_onebitcode_javascript.jpg" />
+              <img
+                src="img/certificado_onebitcode_javascript.jpg"
+                alt="CertificadoJS"
+              />
               <h3 normal class="text">
                 Certificado de Conclusão do Módulo de Javascript: OneBitCode
               </h3>
             </figure>
             <figure id="CertTS" class="slide">
-              <img src="img/certificado_onebitcode_typescript_page-0001.jpg" />
+              <img
+                src="img/certificado_onebitcode_typescript_page-0001.jpg"
+                alt="CertificadoTS"
+              />
               <h3 normal class="text">
                 Certificado de Conclusão do Módulo de Typescript: OneBitCode
               </h3>
             </figure>
             <figure id="CertGGh" class="slide">
-              <img src="img/certificado_onebitcode_gitgithub_page-0001.jpg" />
+              <img
+                src="img/certificado_onebitcode_gitgithub_page-0001.jpg"
+                alt="CertificadoGitGithub"
+              />
               <h3 normal class="text">
                 Certificado de Conclusão do Módulo de GIT e GitHub: OneBitCode
               </h3>
@@ -431,37 +477,31 @@
             <figure id="CertSass" class="slide">
               <img
                 src="img/certificado_onebitcode_sass_pages-to-jpg-0001.jpg"
+                alt="CertificadoSass"
               />
               <h3 normal class="text">
                 Certificado de Conclusão do Módulo de Sass: OneBitCode
               </h3>
             </figure>
             <figure id="CertBootStrap" class="slide">
-              <img src="img/certificado_onebitcode_bootstrap_page-0001.jpg" />
+              <img
+                src="img/certificado_onebitcode_bootstrap_page-0001.jpg"
+                alt="CertificadoBootstrap"
+              />
               <h3 normal class="text">
                 Certificado de Conclusão do Módulo de BootStrap: OneBitCode
               </h3>
             </figure>
             <figure id="CertReact" class="slide">
-              <img src="img/certificado_onebitcode_react_page-0001.jpg" />
+              <img
+                src="img/certificado_onebitcode_react_page-0001.jpg"
+                alt="CertificadoReact"
+              />
               <h3 normal class="text">
                 Certificado de Conclusão do Módulo de Fundamentos do React:
                 OneBitCode
               </h3>
             </figure>
-          </div>
-          <div id="slider__nav">
-            <a href="#CertFarroupilha" id="sli1" class="nav__link pointer"></a>
-            <a href="#CertLiceu" id="sli2" class="nav__link pointer"></a>
-            <a href="#CertHTML5" id="sli3" class="nav__link pointer"></a>
-            <a href="#CertCSS3" id="sli4" class="nav__link pointer"></a>
-            <a href="#CertCSSmoderno" id="sli5" class="nav__link pointer"></a>
-            <a href="#CertJS" id="sli6" class="nav__link pointer"></a>
-            <a href="#CertTS" id="sli7" class="nav__link pointer"></a>
-            <a href="#CertGGh" id="sli8" class="nav__link pointer"></a>
-            <a href="#CertSass" id="sli9" class="nav__link pointer"></a>
-            <a href="#CertBootStrap" id="sli10" class="nav__link pointer"></a>
-            <a href="#CertReact" id="sli11" class="nav__link pointer"></a>
           </div>
         </section>
       </main>
