@@ -4,6 +4,9 @@ Meu currículo profissional como desenvolvedor em versão página de web.
 
 ## Atualizações recentes
 
+\\ 24/02/2026:
+(·) Correção rápida do elemento "hr" em telas maiores
+
 \\ 23/02/2026:
 (·) Ajustes recomendados, e melhor navegação pelos slides de Certificados
 (·) Logo do OneBitCode atualizado
