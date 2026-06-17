@@ -38,14 +38,14 @@ window.onscroll = function () {
 };
 
 console.info(
-  "Caso não queira visualizar os certificados em forma de slides, acesse este link abaixo para download:"
+  "Caso não queira visualizar os certificados em forma de slides, acesse este link abaixo para download:",
 );
 console.log(
-  "https://drive.google.com/drive/folders/177oecUc4tGtRGWiPhJdtzKi4ynWsw7bO?usp=sharing"
+  "https://drive.google.com/drive/folders/177oecUc4tGtRGWiPhJdtzKi4ynWsw7bO?usp=sharing",
 );
 
 console.info(
-  "Este site é hospedado pelo Github Pages, cujos arquivos fonte estão no repositório abaixo (Recomendado ler o README.md para informações sobre atualizações):"
+  "Este site é hospedado pelo Github Pages, cujos arquivos fonte estão no repositório abaixo (Recomendado ler o README.md para informações sobre atualizações):",
 );
 console.log("https://github.com/JoaoLuciano1429/meucurriculo.github.io");
 
@@ -175,6 +175,8 @@ mail.addEventListener("click", () => {
 });
 
 // Função para exibir telefone e email durante a impressão
+const telPrint = document.createElement("span");
+const mailPrint = document.createElement("span");
 const showContactOnPrint = () => {
   const telElement = document.getElementById("tel");
   const mailElement = document.getElementById("mail");
@@ -184,24 +186,62 @@ const showContactOnPrint = () => {
   const decodedMail = atob(mailElement.dataset.mail);
 
   // Cria elementos temporários para exibição
-  const telPrint = document.createElement("span");
+
   telPrint.id = "telPrint";
   telPrint.textContent = `${decodedTel}`;
 
-  const mailPrint = document.createElement("span");
   mailPrint.id = "mailPrint";
   mailPrint.textContent = `${decodedMail}`;
 
   // Adiciona os elementos ao DOM
   telElement.parentElement.appendChild(telPrint);
   mailElement.parentElement.appendChild(mailPrint);
-
-  // Remove os elementos após a impressão
-  window.onafterprint = () => {
-    telPrint.remove();
-    mailPrint.remove();
-  };
 };
 
+const createh1 = document.createElement("h1");
+const linkLinkedIn = document.querySelector('a[title="Meu LinkedIn"]');
+const linkLinkedInPrint = document.createElement("span");
+const linkGitHub = document.querySelector('a[title="Meu GitHub"]');
+const linkGitHubPrint = document.createElement("span");
+const linkPortfolio = document.querySelector('a[title="Meu Portfólio"]');
+const linkPortfolioPrint = document.createElement("span");
+const showLinksOnPrint = () => {
+  const divContainer = document.querySelector(".container");
+  const createSectionLinks = document.createElement("section");
+  createSectionLinks.classList.add("print-links-section");
+
+  createh1.textContent = "Meus Links";
+  createh1.setAttribute("negrito", "");
+
+  linkLinkedInPrint.setAttribute("normal", "");
+  linkGitHubPrint.setAttribute("normal", "");
+  linkPortfolioPrint.setAttribute("normal", "");
+
+  linkLinkedInPrint.textContent = `LinkedIn: ${linkLinkedIn.href}`;
+  linkGitHubPrint.textContent = `GitHub: ${linkGitHub.href}`;
+  linkPortfolioPrint.textContent = `Portfólio: ${linkPortfolio.href}`;
+
+  divContainer.appendChild(createSectionLinks);
+  createSectionLinks.appendChild(createh1);
+  createSectionLinks.appendChild(linkLinkedInPrint);
+  createSectionLinks.appendChild(document.createElement("br"));
+  createSectionLinks.appendChild(linkGitHubPrint);
+  createSectionLinks.appendChild(document.createElement("br"));
+  createSectionLinks.appendChild(linkPortfolioPrint);
+};
 // Adiciona o evento para antes da impressão
-window.onbeforeprint = showContactOnPrint;
+window.onbeforeprint = () => {
+  showContactOnPrint();
+  showLinksOnPrint();
+};
+
+window.onafterprint = () => {
+  // Remove os elementos temporários após a impressão
+  const telPrintElement = document.getElementById("telPrint");
+  const mailPrintElement = document.getElementById("mailPrint");
+  const linksSection = document.querySelector(".print-links-section");
+
+  if (telPrintElement) telPrintElement.remove();
+  if (mailPrintElement) mailPrintElement.remove();
+  if (linksSection) linksSection.remove();
+};

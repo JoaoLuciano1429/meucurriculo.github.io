@@ -17,7 +17,7 @@
     height: 297mm;
     page-orientation: portrait;
     margin: 10mm;
-    scale: 67% !important;
+    scale: 70% !important;
   }
 
   [negrito] {
@@ -79,9 +79,5 @@
     transform: none !important;
     background: none !important;
     box-shadow: none !important;
-  }
-
-  #projetos {
-    display: none !important;
   }
 }

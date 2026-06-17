@@ -59,8 +59,7 @@ section#dadosPessoais {
     "breakLine breakLine breakLine breakLine"
     "breakLine breakLine breakLine breakLine"
     "photo photo name name"
-    "photo photo genre genre"
-    "photo photo birthday birthday"
+    "photo photo local local"
     "photo photo age age"
     "photo photo phone phone"
     "photo photo email email"
@@ -265,6 +264,12 @@ section#objetivosProfissionais {
   color: #333;
   background: #f5f5f5;
   width: 100%;
+}
+
+.card .back h4 span p {
+  font-size: 12px;
+  color: #555;
+  text-align: left;
 }
 
 #cardUNISAL {

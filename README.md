@@ -4,6 +4,9 @@ Meu currículo profissional como desenvolvedor em versão página de web.
 
 ## Atualizações recentes
 
+\\ 17/06/2026:
+(·) Otimização do Currículo
+
 \\ 18/03/2026:
 (·) Atualização em Experiencia Profissional
 
