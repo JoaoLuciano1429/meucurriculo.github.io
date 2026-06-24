@@ -43,20 +43,43 @@
     margin-top: 10px !important;
   }
 
+  .age {
+    display: none !important;
+  }
+
   #tel,
   #mail {
     display: none !important;
+  }
+
+  #objetivosProfissionais .text-content {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
   }
 
   .card {
     width: 35% !important;
     height: auto !important;
     margin: 0 auto !important;
+    padding: 10px !important;
     border: 1px dashed #000 !important;
   }
 
+  #cardFarroupilha {
+    display: none !important;
+  }
+
   #experienciaProfissional {
-    margin-bottom: 90mm !important;
+    margin-bottom: 35mm !important;
+  }
+
+  #cardPrefeitura {
+    left: -25% !important;
+  }
+
+  #cardBosch {
+    right: -25% !important;
+    top: -55% !important;
   }
 
   #experienciaProfissional .card .front::after {
