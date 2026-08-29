@@ -10,6 +10,7 @@
     margin: 0 !important;
     padding: 0 !important;
     box-shadow: none !important;
+    font-family: Arial, sans-serif !important;
   }
 
   @page {
@@ -17,7 +18,7 @@
     height: 297mm;
     page-orientation: portrait;
     margin: 10mm;
-    scale: 70% !important;
+    scale: 94% !important;
   }
 
   [negrito] {
