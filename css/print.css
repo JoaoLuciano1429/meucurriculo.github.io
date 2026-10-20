@@ -74,34 +74,15 @@
     margin-bottom: 35mm !important;
   }
 
-  #cardPrefeitura {
-    left: -25% !important;
+  #experienciaProfissional > .card-container {
+    display: none !important;
   }
 
-  #cardBosch {
-    right: -25% !important;
-    top: -55% !important;
+  #experienciaProfissional > .jobList {
+    display: block !important;
   }
 
-  #experienciaProfissional .card .front::after {
-    content: "Empresa: " attr(alt);
-    display: block;
-    font-weight: bold;
-    color: #000;
-    margin-top: 10px;
-  }
-  #experienciaProfissional .card .back {
-    display: block !important;
-    position: static !important;
-    transform: none !important;
-    background: none !important;
-    box-shadow: none !important;
-  }
-  #experienciaProfissional .card .front {
-    display: block !important;
-    position: static !important;
-    transform: none !important;
-    background: none !important;
-    box-shadow: none !important;
+  #experienciaProfissional > .jobList h4 ul li {
+    margin-bottom: 10px !important;
   }
 }

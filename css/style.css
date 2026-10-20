@@ -520,12 +520,25 @@ button#toTop.show {
   transform: rotateY(180deg);
 }
 
+#experienciaProfissional > .card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+}
+
 #experienciaProfissional > .card-container .card:hover .front {
   transform: rotateY(-180deg);
 }
 
 #experienciaProfissional > .card-container .card:hover .back {
   transform: rotateY(0deg);
+}
+
+#experienciaProfissional > .jobList {
+  display: none;
 }
 
 .content {
